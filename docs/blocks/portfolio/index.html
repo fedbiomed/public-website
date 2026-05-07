@@ -1,0 +1,2759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- Primary Meta Tags -->
+<title> Blocks - Portfolio </title>
+<meta name="title" content=" Blocks - Portfolio ">
+<meta name="description" content=" Copy any custom block snippet below and paste it on your page to build your website easily. ">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content=" /docs/blocks/portfolio/ ">
+<meta property="og:title" content=" Blocks - Portfolio ">
+<meta property="og:description" content=" Copy any custom block snippet below and paste it on your page to build your website easily. ">
+
+<meta property="og:image" content="/test-fbm-site/assets/img/logo_fbm_og.webp" />
+
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="/docs/blocks/portfolio/">
+<meta property="twitter:title" content=" Blocks - Portfolio ">
+<meta property="twitter:description" content=" Copy any custom block snippet below and paste it on your page to build your website easily. ">
+
+<meta property="twitter:image" content="/test-fbm-site/assets/img/logo_fbm_og.webp" />
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Stylesheets-->
+  <link rel="shortcut icon" href="/test-fbm-site/assets/img/favicon.png" />
+<link rel="stylesheet" href="/test-fbm-site/assets/css/plugins.css">
+
+<link rel="stylesheet" href="/test-fbm-site/assets/css/styles.css">
+
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""
+/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""
+></script>
+  
+</head>
+<body class="">
+    <div class="content-wrapper">
+        <header class="wrapper bg-soft-primary">
+        
+
+<nav class="navbar navbar-expand-lg center-nav transparent navbar-light">
+  
+    <div class="container flex-lg-row flex-nowrap align-items-center">
+  
+    <div class="navbar-brand w-100">
+      <a href="/test-fbm-site/">
+        
+          <img src="/test-fbm-site/assets/img/logo_full.svg" 
+               srcset="/test-fbm-site/assets/img/logo_full.svg 2x" alt="" />
+        
+      </a>
+    </div>
+    <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+      <!-- DEBUG START -->
+      <div class="offcanvas-header d-lg-none">
+        <h3 class="text-white fs-30 mb-0">Fed-BioMed</h3>
+        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <!-- DEBUG END -->
+      <div class="offcanvas-body  d-flex flex-column h-100">
+        
+          <!-- Standard Navigation -->
+          
+<ul class="navbar-nav"> 
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/test-fbm-site/about/"><span class="hover">About</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/test-fbm-site/software/"><span class="hover">Software</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><span class="hover">How it works</span></a>
+    <ul class="dropdown-menu">
+      
+      
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/federated_network/"><span class="hover">Federated Network</span></a></li>
+      
+      
+      
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/access_control/"><span class="hover">Access Control</span></a></li>
+      
+      
+      
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/federated_discovery/"><span class="hover">Federated Discovery</span></a></li>
+      
+      
+      
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/federated_analytics/"><span class="hover">Federated Analytics</span></a></li>
+      
+      
+      
+      <li class="nav-item"><a class="dropdown-item" href="/test-fbm-site/federated_learning/"><span class="hover">Federated Learning</span></a></li>
+      
+      
+    </ul>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/test-fbm-site/use_cases/"><span class="hover">Use Cases</span></a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="/test-fbm-site/faq/"><span class="hover">FAQ</span></a>
+  </li>
+  
+  
+</ul>
+
+
+        
+        
+        <div class="offcanvas-footer d-lg-none">
+          <div>
+            <a href="mailto:fedbiomed@inria.fr" class="link-inverse">fedbiomed@inria.fr</a>
+            <nav class="nav social social-white mt-4">
+              
+            </nav>
+          </div>
+        </div>
+        <!-- /.offcanvas-footer -->
+      </div>
+      <!-- /.offcanvas-body -->
+    </div>
+    <!-- /.navbar-collapse -->
+    
+    <div class="navbar-other w-100 d-flex ms-auto">
+      <ul class="navbar-nav flex-row align-items-center ms-auto">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          <li class="nav-item d-none d-md-block">
+            <a href="https://docs.fedbiomed.org/"
+              class="btn btn-primary btn-gradient bg-gradient-dark-button border-0 rounded-xl"
+              target="_blank">
+              Documentation
+            </a>
+          </li>
+        
+        
+        
+        
+        
+        
+        <li class="nav-item d-lg-none">
+          <button class="hamburger offcanvas-nav-btn"><span></span></button>
+        </li>
+      </ul>
+    </div>
+  
+    </div>
+    <!-- /.container -->
+  
+</nav>
+<!-- /.navbar -->
+
+
+
+
+
+
+
+
+
+
+        </header>
+        <!-- /header -->
+        <section class="wrapper bg-soft-primary">
+          <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+            <div class="row">
+              <div class="col-md-9 col-lg-7 col-xl-5 mx-auto">
+                <h1 class="display-1 mb-3">Blocks - Portfolio</h1>
+                <p class="lead px-xxl-11">Copy any custom block snippet below and paste it on your page to build your website easily.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="wrapper bg-light wrapper-border">
+    <div class="container py-11">
+      <h2 class="h5">Filter Blocks:</h2>
+      <ul class="list-inline mb-0">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </div>
+  </section>
+  
+        
+<section id="snippet-1" class="wrapper bg-light wrapper-border">
+  <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
+    <div class="row align-items-center mb-7">
+      <div class="col-md-8 col-lg-8 col-xl-7 col-xxl-6 pe-lg-17">
+        <h2 class="display-4 mb-3">Recent Projects</h2>
+        <p class="lead fs-lg">We love to turn ideas into beautiful things.</p>
+      </div>
+    </div>
+
+    <div class="projects-tiles">
+      <div class="project grid grid-view">
+        <div class="row gx-md-8 gx-xl-12 gy-10 gy-md-12 isotope">
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pb-15 pb-md-17">
+    <div class="card">
+      <div class="card-footer border-0 position-relative">
+        <a class="collapse-link collapsed" data-bs-toggle="collapse" href="#collapse-snippet-1-html">
+          View HTML code
+        </a>
+      </div>
+      <div id="collapse-snippet-1-html" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+            <button class="btn-clipboard" data-clipboard-target="#html1">Copy</button>
+            <div id="html1">
+              <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"wrapper bg-light"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container py-14 py-md-16"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row align-items-center mb-7"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-8 col-lg-8 col-xl-7 col-xxl-6 pe-lg-17"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"display-4 mb-3"</span><span class="nt">&gt;</span>Recent Projects<span class="nt">&lt;/h2&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"lead fs-lg"</span><span class="nt">&gt;</span>We love to turn ideas into beautiful things.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"projects-tiles"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"project grid grid-view"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row gx-md-8 gx-xl-12 gy-10 gy-md-12 isotope"</span><span class="nt">&gt;</span>
+          {% assign featured_projects = site.use_cases | where: "featured", true | limit: 3 %}
+          {% for project in featured_projects %}
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item {% if forloop.index == 2 %}col-md-7 mt-md-17{% else %}col-md-5{% endif %}"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"lift rounded mb-6"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ project.url }}"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"{{ project.thumbnail }}"</span> 
+                     <span class="na">srcset=</span><span class="s">"{{ project.thumbnail | replace: '.webp', '@2x.webp' }} 2x"</span> 
+                     <span class="na">alt=</span><span class="s">"{{ project.title }}"</span> <span class="nt">/&gt;</span>
+              <span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/figure&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-category mb-3 text-{{ project.category | downcase }}"</span><span class="nt">&gt;</span>{{ project.category }}<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"post-title"</span><span class="nt">&gt;</span>{{ project.title }}<span class="nt">&lt;/h3&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          {% endfor %}
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+              </code></pre></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- YAML Configuration -->
+      <div class="card-footer border-0 position-relative">
+        <a class="collapse-link collapsed" data-bs-toggle="collapse" href="#collapse-snippet-1-yaml">
+          View YAML Configuration
+        </a>
+      </div>
+      <div id="collapse-snippet-1-yaml" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+            <button class="btn-clipboard" data-clipboard-target="#yaml1">Copy</button>
+            <div id="yaml1">
+              <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">portfolio1</span><span class="pi">:</span>
+  <span class="na">enable</span><span class="pi">:</span> <span class="kc">true</span>
+  <span class="na">content</span><span class="pi">:</span>
+    <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Recent</span><span class="nv"> </span><span class="s">Projects"</span>
+    <span class="na">subtitle</span><span class="pi">:</span> <span class="s2">"</span><span class="s">We</span><span class="nv"> </span><span class="s">love</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">turn</span><span class="nv"> </span><span class="s">ideas</span><span class="nv"> </span><span class="s">into</span><span class="nv"> </span><span class="s">beautiful</span><span class="nv"> </span><span class="s">things."</span>
+    <span class="na">title_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">display-4</span><span class="nv"> </span><span class="s">mb-3"</span>
+    <span class="na">subtitle_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">lead</span><span class="nv"> </span><span class="s">fs-lg"</span>
+  <span class="na">grid</span><span class="pi">:</span>
+    <span class="na">classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">gx-md-8</span><span class="nv"> </span><span class="s">gx-xl-12</span><span class="nv"> </span><span class="s">gy-10</span><span class="nv"> </span><span class="s">gy-md-12</span><span class="nv"> </span><span class="s">isotope"</span>
+    <span class="na">columns</span><span class="pi">:</span>
+      <span class="na">md5</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-md-5"</span>
+      <span class="na">md7</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-md-7"</span>
+    <span class="na">item_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">lift</span><span class="nv"> </span><span class="s">rounded</span><span class="nv"> </span><span class="s">mb-6"</span>
+              </code></pre></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- /section -->
+    
+<section id="snippet-2" class="wrapper bg-light wrapper-border">
+  <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
+    <div class="row">
+      <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto text-center">
+        <h2 class="fs-15 text-uppercase text-muted mb-3">Latest Projects</h2>
+        <h3 class="display-4 mb-10">Check out some of our awesome projects with <span class="underline-3 style-2 yellow">creative</span> ideas and great design.</h3>
+      </div>
+    </div>
+
+    <div class="swiper-container grid-view mb-6" 
+         data-margin="30" 
+         data-dots="true" 
+         data-items-xl="3" 
+         data-items-md="2" 
+         data-items-xs="1">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          
+          
+          <div class="swiper-slide">
+            <figure class="rounded mb-6">
+              <img src="/assets/img/projects/DTRIP4H.avif" 
+                   srcset="/assets/img/projects/DTRIP4H.avif 2x" 
+                   alt="DTRIP4H" />
+              
+            </figure>
+            <div class="project-details d-flex justify-content-center flex-column">
+              <div class="post-header">
+                <h2 class="post-title h3">
+                  <a href="/use_cases/DTRIP4H/" class="link-dark">DTRIP4H</a>
+                </h2>
+                <div class="post-category text-ash">Research Context</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <figure class="rounded mb-6">
+              <img src="/assets/img/projects/usecase.png" 
+                   srcset="/assets/img/projects/usecase.png 2x" 
+                   alt="Fed-BioMed for Federated-PET project" />
+              
+            </figure>
+            <div class="project-details d-flex justify-content-center flex-column">
+              <div class="post-header">
+                <h2 class="post-title h3">
+                  <a href="/use_cases/Fed-BioMed-for-Federated-PET-project/" class="link-dark">Fed-BioMed for Federated-PET project</a>
+                </h2>
+                <div class="post-category text-ash">Research Context</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <figure class="rounded mb-6">
+              <img src="/assets/img/projects/usecase.png" 
+                   srcset="/assets/img/projects/usecase.png 2x" 
+                   alt="Fed-BioMed for FEDERATED-LUNG project" />
+              
+            </figure>
+            <div class="project-details d-flex justify-content-center flex-column">
+              <div class="post-header">
+                <h2 class="post-title h3">
+                  <a href="/use_cases/Fed-BioMed%20for%20FEDERATED-LUNG%20project/" class="link-dark">Fed-BioMed for FEDERATED-LUNG project</a>
+                </h2>
+                <div class="post-category text-ash">Research Context</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <figure class="rounded mb-6">
+              <img src="/assets/img/projects/CTimaging.png" 
+                   srcset="/assets/img/projects/CTimaging.png 2x" 
+                   alt="Real-world Federated Learning for Cardiac CT Imaging" />
+              
+            </figure>
+            <div class="project-details d-flex justify-content-center flex-column">
+              <div class="post-header">
+                <h2 class="post-title h3">
+                  <a href="/use_cases/Real-world-Federated-Learning-for-Cardiac-CT-Imaging/" class="link-dark">Real-world Federated Learning for Cardiac CT Imaging</a>
+                </h2>
+                <div class="post-category text-ash">Research Context</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <figure class="rounded mb-6">
+              <img src="/assets/img/projects/antoine_lacassagne.png" 
+                   srcset="/assets/img/projects/antoine_lacassagne.png 2x" 
+                   alt="Fed-BioMed for oncology research" />
+              
+            </figure>
+            <div class="project-details d-flex justify-content-center flex-column">
+              <div class="post-header">
+                <h2 class="post-title h3">
+                  <a href="/use_cases/Fed-BioMed-for-oncology-research/" class="link-dark">Fed-BioMed for oncology research</a>
+                </h2>
+                <div class="post-category text-ash">Research Context</div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pb-15 pb-md-17">
+    <div class="card">
+      <div class="card-footer border-0 position-relative">
+        <a class="collapse-link collapsed" data-bs-toggle="collapse" href="#collapse-snippet-2-html">
+          View HTML code
+        </a>
+      </div>
+      <div id="collapse-snippet-2-html" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+            <button class="btn-clipboard" data-clipboard-target="#html2">Copy</button>
+            <div id="html2">
+              <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"wrapper bg-light"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container py-14 py-md-16"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-9 col-xl-8 col-xxl-7 mx-auto text-center"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"fs-15 text-uppercase text-muted mb-3"</span><span class="nt">&gt;</span>Latest Projects<span class="nt">&lt;/h2&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"display-4 mb-10"</span><span class="nt">&gt;</span>Check out some of our awesome projects with <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"underline-3 style-2 yellow"</span><span class="nt">&gt;</span>creative<span class="nt">&lt;/span&gt;</span> ideas and great design.<span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper-container grid-view mb-6"</span> 
+         <span class="na">data-margin=</span><span class="s">"30"</span> 
+         <span class="na">data-dots=</span><span class="s">"true"</span> 
+         <span class="na">data-items-xl=</span><span class="s">"3"</span> 
+         <span class="na">data-items-md=</span><span class="s">"2"</span> 
+         <span class="na">data-items-xs=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper-wrapper"</span><span class="nt">&gt;</span>
+          {% assign projects = site.use_cases | sort: 'date' | reverse %}
+          {% for project in projects %}
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper-slide"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"rounded mb-6"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"{{ project.thumbnail }}"</span> 
+                   <span class="na">srcset=</span><span class="s">"{{ project.thumbnail | replace: '.webp', '@2x.webp' }} 2x"</span> 
+                   <span class="na">alt=</span><span class="s">"{{ project.title }}"</span> <span class="nt">/&gt;</span>
+              {% if project.gallery %}
+              <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"item-link"</span> 
+                 <span class="na">href=</span><span class="s">"{{ project.gallery[0].url }}"</span> 
+                 <span class="na">data-glightbox</span> 
+                 <span class="na">data-gallery=</span><span class="s">"projects-group"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"uil uil-focus-add"</span><span class="nt">&gt;&lt;/i&gt;</span>
+              <span class="nt">&lt;/a&gt;</span>
+              {% endif %}
+            <span class="nt">&lt;/figure&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"project-details d-flex justify-content-center flex-column"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-header"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"post-title h3"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ project.url }}"</span> <span class="na">class=</span><span class="s">"link-dark"</span><span class="nt">&gt;</span>{{ project.title }}<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/h2&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-category text-ash"</span><span class="nt">&gt;</span>{{ project.category }}<span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          {% endfor %}
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+              </code></pre></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- YAML Configuration -->
+      <div class="card-footer border-0 position-relative">
+        <a class="collapse-link collapsed" data-bs-toggle="collapse" href="#collapse-snippet-2-yaml">
+          View YAML Configuration
+        </a>
+      </div>
+      <div id="collapse-snippet-2-yaml" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+            <button class="btn-clipboard" data-clipboard-target="#yaml2">Copy</button>
+            <div id="yaml2">
+              <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">portfolio2</span><span class="pi">:</span>
+  <span class="na">enable</span><span class="pi">:</span> <span class="kc">true</span>
+  <span class="na">content</span><span class="pi">:</span>
+    <span class="na">subtitle</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Latest</span><span class="nv"> </span><span class="s">Projects"</span>
+    <span class="na">subtitle_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fs-15</span><span class="nv"> </span><span class="s">text-uppercase</span><span class="nv"> </span><span class="s">text-muted</span><span class="nv"> </span><span class="s">mb-3"</span>
+    <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Check</span><span class="nv"> </span><span class="s">out</span><span class="nv"> </span><span class="s">some</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">our</span><span class="nv"> </span><span class="s">awesome</span><span class="nv"> </span><span class="s">projects</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">&lt;span</span><span class="nv"> </span><span class="s">class=</span><span class="se">\"</span><span class="s">underline-3</span><span class="nv"> </span><span class="s">style-2</span><span class="nv"> </span><span class="s">yellow</span><span class="se">\"</span><span class="s">&gt;creative&lt;/span&gt;</span><span class="nv"> </span><span class="s">ideas</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">great</span><span class="nv"> </span><span class="s">design."</span>
+    <span class="na">title_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">display-4</span><span class="nv"> </span><span class="s">mb-10"</span>
+  <span class="na">swiper</span><span class="pi">:</span>
+    <span class="na">margin</span><span class="pi">:</span> <span class="m">30</span>
+    <span class="na">dots</span><span class="pi">:</span> <span class="kc">true</span>
+    <span class="na">items</span><span class="pi">:</span>
+      <span class="na">xl</span><span class="pi">:</span> <span class="m">3</span>
+      <span class="na">md</span><span class="pi">:</span> <span class="m">2</span>
+      <span class="na">xs</span><span class="pi">:</span> <span class="m">1</span>
+    <span class="na">classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">grid-view</span><span class="nv"> </span><span class="s">mb-6"</span>
+  <span class="na">project</span><span class="pi">:</span>
+    <span class="na">figure_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">rounded</span><span class="nv"> </span><span class="s">mb-6"</span>
+    <span class="na">details_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">d-flex</span><span class="nv"> </span><span class="s">justify-content-center</span><span class="nv"> </span><span class="s">flex-column"</span>
+    <span class="na">title_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">post-title</span><span class="nv"> </span><span class="s">h3"</span>
+    <span class="na">category_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">post-category</span><span class="nv"> </span><span class="s">text-ash"</span>
+              </code></pre></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- /section -->
+    
+<section id="snippet-3" class="wrapper bg-light wrapper-border">
+  <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
+    <div class="projects-tiles">
+      <div class="project grid grid-view">
+        <div class="row gx-md-8 gx-xl-12 gy-10 gy-md-12 isotope">
+          <div class="item col-md-6 mt-md-7 mt-lg-15">
+            <div class="project-details d-flex justify-content-center align-self-end flex-column ps-0 pb-0">
+              <div class="post-header">
+                <h2 class="display-4 mb-4 pe-xxl-15">Check out some of our recent projects below.</h2>
+                <p class="lead fs-lg mb-0">We love to turn ideas into beautiful things.</p>
+              </div>
+            </div>
+          </div>
+
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pb-15 pb-md-17">
+    <div class="card">
+      <div class="card-footer border-0 position-relative">
+        <a class="collapse-link collapsed" data-bs-toggle="collapse" href="#collapse-snippet-3-html">
+          View HTML code
+        </a>
+      </div>
+      <div id="collapse-snippet-3-html" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+            <button class="btn-clipboard" data-clipboard-target="#html3">Copy</button>
+            <div id="html3">
+              <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"wrapper bg-light"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container py-14 py-md-16"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"projects-tiles"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"project grid grid-view"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row gx-md-8 gx-xl-12 gy-10 gy-md-12 isotope"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item col-md-6 mt-md-7 mt-lg-15"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"project-details d-flex justify-content-center align-self-end flex-column ps-0 pb-0"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-header"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"display-4 mb-4 pe-xxl-15"</span><span class="nt">&gt;</span>Check out some of our recent projects below.<span class="nt">&lt;/h2&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"lead fs-lg mb-0"</span><span class="nt">&gt;</span>We love to turn ideas into beautiful things.<span class="nt">&lt;/p&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+
+          {% assign featured_projects = site.use_cases | where: "featured", true | limit: 3 %}
+          {% for project in featured_projects %}
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item col-md-6"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"lift rounded mb-6"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ project.url }}"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"{{ project.thumbnail }}"</span> 
+                     <span class="na">srcset=</span><span class="s">"{{ project.thumbnail | replace: '.webp', '@2x.webp' }} 2x"</span> 
+                     <span class="na">alt=</span><span class="s">"{{ project.title }}"</span> <span class="nt">/&gt;</span>
+              <span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/figure&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-category text-line mb-3 text-{{ project.category | downcase }}"</span><span class="nt">&gt;</span>{{ project.category }}<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"post-title h3"</span><span class="nt">&gt;</span>{{ project.title }}<span class="nt">&lt;/h2&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          {% endfor %}
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+              </code></pre></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- YAML Configuration -->
+      <div class="card-footer border-0 position-relative">
+        <a class="collapse-link collapsed" data-bs-toggle="collapse" href="#collapse-snippet-3-yaml">
+          View YAML Configuration
+        </a>
+      </div>
+      <div id="collapse-snippet-3-yaml" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+            <button class="btn-clipboard" data-clipboard-target="#yaml3">Copy</button>
+            <div id="yaml3">
+              <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">portfolio3</span><span class="pi">:</span>
+  <span class="na">enable</span><span class="pi">:</span> <span class="kc">true</span>
+  <span class="na">content</span><span class="pi">:</span>
+    <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Check</span><span class="nv"> </span><span class="s">out</span><span class="nv"> </span><span class="s">some</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">our</span><span class="nv"> </span><span class="s">recent</span><span class="nv"> </span><span class="s">projects</span><span class="nv"> </span><span class="s">below."</span>
+    <span class="na">subtitle</span><span class="pi">:</span> <span class="s2">"</span><span class="s">We</span><span class="nv"> </span><span class="s">love</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">turn</span><span class="nv"> </span><span class="s">ideas</span><span class="nv"> </span><span class="s">into</span><span class="nv"> </span><span class="s">beautiful</span><span class="nv"> </span><span class="s">things."</span>
+    <span class="na">title_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">display-4</span><span class="nv"> </span><span class="s">mb-4</span><span class="nv"> </span><span class="s">pe-xxl-15"</span>
+    <span class="na">subtitle_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">lead</span><span class="nv"> </span><span class="s">fs-lg</span><span class="nv"> </span><span class="s">mb-0"</span>
+  <span class="na">grid</span><span class="pi">:</span>
+    <span class="na">classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">gx-md-8</span><span class="nv"> </span><span class="s">gx-xl-12</span><span class="nv"> </span><span class="s">gy-10</span><span class="nv"> </span><span class="s">gy-md-12</span><span class="nv"> </span><span class="s">isotope"</span>
+    <span class="na">header_column</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-md-6</span><span class="nv"> </span><span class="s">mt-md-7</span><span class="nv"> </span><span class="s">mt-lg-15"</span>
+    <span class="na">item_column</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-md-6"</span>
+  <span class="na">project</span><span class="pi">:</span>
+    <span class="na">figure_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">lift</span><span class="nv"> </span><span class="s">rounded</span><span class="nv"> </span><span class="s">mb-6"</span>
+    <span class="na">category_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">post-category</span><span class="nv"> </span><span class="s">text-line</span><span class="nv"> </span><span class="s">mb-3"</span>
+    <span class="na">title_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">post-title</span><span class="nv"> </span><span class="s">h3"</span>
+              </code></pre></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- /section -->
+    
+<section id="snippet-4" class="wrapper bg-light wrapper-border">
+  <div class="container pt-15 pt-md-17">
+    <div class="row">
+      <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto text-center">
+        <h2 class="fs-15 text-uppercase text-muted mb-3">Latest Projects</h2>
+        <h3 class="display-4 mb-10">Check out some of our awesome projects with creative ideas and great design.</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid px-md-6">
+    <div class="swiper-container blog grid-view mb-14 mb-md-16" 
+         data-margin="30" 
+         data-nav="true" 
+         data-dots="true" 
+         data-items-xxl="3" 
+         data-items-md="2" 
+         data-items-xs="1">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          
+          
+          <div class="swiper-slide">
+            <figure class="rounded">
+              <img src="/assets/img/projects/DTRIP4H.avif" 
+                   srcset="/assets/img/projects/DTRIP4H.avif 2x" 
+                   alt="DTRIP4H" />
+            </figure>
+          </div>
+          
+          <div class="swiper-slide">
+            <figure class="rounded">
+              <img src="/assets/img/projects/usecase.png" 
+                   srcset="/assets/img/projects/usecase.png 2x" 
+                   alt="Fed-BioMed for Federated-PET project" />
+            </figure>
+          </div>
+          
+          <div class="swiper-slide">
+            <figure class="rounded">
+              <img src="/assets/img/projects/usecase.png" 
+                   srcset="/assets/img/projects/usecase.png 2x" 
+                   alt="Fed-BioMed for FEDERATED-LUNG project" />
+            </figure>
+          </div>
+          
+          <div class="swiper-slide">
+            <figure class="rounded">
+              <img src="/assets/img/projects/CTimaging.png" 
+                   srcset="/assets/img/projects/CTimaging.png 2x" 
+                   alt="Real-world Federated Learning for Cardiac CT Imaging" />
+            </figure>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pb-15 pb-md-17">
+    <div class="card">
+      <div class="card-footer border-0 position-relative">
+        <a class="collapse-link collapsed" data-bs-toggle="collapse" href="#collapse-snippet-4-html">
+          View HTML code
+        </a>
+      </div>
+      <div id="collapse-snippet-4-html" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+            <button class="btn-clipboard" data-clipboard-target="#html4">Copy</button>
+            <div id="html4">
+              <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"wrapper bg-light"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container pt-15 pt-md-17"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-9 col-xl-8 col-xxl-7 mx-auto text-center"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"fs-15 text-uppercase text-muted mb-3"</span><span class="nt">&gt;</span>Latest Projects<span class="nt">&lt;/h2&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"display-4 mb-10"</span><span class="nt">&gt;</span>Check out some of our awesome projects with creative ideas and great design.<span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid px-md-6"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper-container blog grid-view mb-14 mb-md-16"</span> 
+         <span class="na">data-margin=</span><span class="s">"30"</span> 
+         <span class="na">data-nav=</span><span class="s">"true"</span> 
+         <span class="na">data-dots=</span><span class="s">"true"</span> 
+         <span class="na">data-items-xxl=</span><span class="s">"3"</span> 
+         <span class="na">data-items-md=</span><span class="s">"2"</span> 
+         <span class="na">data-items-xs=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper-wrapper"</span><span class="nt">&gt;</span>
+          {% assign projects = site.use_cases | sort: 'date' | reverse %}
+          {% for project in projects %}
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper-slide"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"rounded"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"{{ project.thumbnail }}"</span> 
+                   <span class="na">srcset=</span><span class="s">"{{ project.thumbnail | replace: '.webp', '@2x.webp' }} 2x"</span> 
+                   <span class="na">alt=</span><span class="s">"{{ project.title }}"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;/figure&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          {% endfor %}
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+              </code></pre></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- YAML Configuration -->
+      <div class="card-footer border-0 position-relative">
+        <a class="collapse-link collapsed" data-bs-toggle="collapse" href="#collapse-snippet-4-yaml">
+          View YAML Configuration
+        </a>
+      </div>
+      <div id="collapse-snippet-4-yaml" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+            <button class="btn-clipboard" data-clipboard-target="#yaml4">Copy</button>
+            <div id="yaml4">
+              <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">portfolio4</span><span class="pi">:</span>
+  <span class="na">enable</span><span class="pi">:</span> <span class="kc">true</span>
+  <span class="na">content</span><span class="pi">:</span>
+    <span class="na">subtitle</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Latest</span><span class="nv"> </span><span class="s">Projects"</span>
+    <span class="na">subtitle_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fs-15</span><span class="nv"> </span><span class="s">text-uppercase</span><span class="nv"> </span><span class="s">text-muted</span><span class="nv"> </span><span class="s">mb-3"</span>
+    <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Check</span><span class="nv"> </span><span class="s">out</span><span class="nv"> </span><span class="s">some</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">our</span><span class="nv"> </span><span class="s">awesome</span><span class="nv"> </span><span class="s">projects</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">creative</span><span class="nv"> </span><span class="s">ideas</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">great</span><span class="nv"> </span><span class="s">design."</span>
+    <span class="na">title_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">display-4</span><span class="nv"> </span><span class="s">mb-10"</span>
+  <span class="na">swiper</span><span class="pi">:</span>
+    <span class="na">margin</span><span class="pi">:</span> <span class="m">30</span>
+    <span class="na">nav</span><span class="pi">:</span> <span class="kc">true</span>
+    <span class="na">dots</span><span class="pi">:</span> <span class="kc">true</span>
+    <span class="na">items</span><span class="pi">:</span>
+      <span class="na">xxl</span><span class="pi">:</span> <span class="m">3</span>
+      <span class="na">md</span><span class="pi">:</span> <span class="m">2</span>
+      <span class="na">xs</span><span class="pi">:</span> <span class="m">1</span>
+    <span class="na">classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">blog</span><span class="nv"> </span><span class="s">grid-view</span><span class="nv"> </span><span class="s">mb-14</span><span class="nv"> </span><span class="s">mb-md-16"</span>
+  <span class="na">project</span><span class="pi">:</span>
+    <span class="na">figure_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">rounded"</span>
+              </code></pre></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- /section -->
+    
+<section id="snippet-5" class="wrapper bg-light wrapper-border">
+  <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
+    <div class="row">
+      <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto mb-8">
+        <h2 class="fs-15 text-uppercase text-muted text-center mb-3">Our Projects</h2>
+        <h3 class="display-4 text-center">Check out some of our awesome projects with creative ideas and great design.</h3>
+      </div>
+    </div>
+
+    <div class="grid grid-view projects-masonry">
+      <div class="row gx-md-8 gy-10 gy-md-13 isotope">
+        
+        
+        <div class="project item col-md-6 col-xl-4 use-case">
+          <figure class="lift rounded mb-6">
+            <a href="/use_cases/Federated-Learning-for-Multi-Institution-Oncology-Collaboration/">
+              <img src="/assets/img/projects/research.png" 
+                   srcset="/assets/img/projects/research.png 2x" 
+                   alt="Federated Learning for Multi-Institution Oncology Collaboration" />
+            </a>
+          </figure>
+          <div class="project-details d-flex justify-content-center flex-column">
+            <div class="post-header">
+              <div class="post-category text-line mb-3 text-use case">Use Case</div>
+              <h2 class="post-title h3">Federated Learning for Multi-Institution Oncology Collaboration</h2>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project item col-md-6 col-xl-4 research-context">
+          <figure class="lift rounded mb-6">
+            <a href="/use_cases/CAL-Fed-BioMed-Experiment/">
+              <img src="/assets/img/projects/Photo_CAL.jpg" 
+                   srcset="/assets/img/projects/Photo_CAL.jpg 2x" 
+                   alt="CAL Fed-BioMed Experiment" />
+            </a>
+          </figure>
+          <div class="project-details d-flex justify-content-center flex-column">
+            <div class="post-header">
+              <div class="post-category text-line mb-3 text-research context">Research Context</div>
+              <h2 class="post-title h3">CAL Fed-BioMed Experiment</h2>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project item col-md-6 col-xl-4 research-context">
+          <figure class="lift rounded mb-6">
+            <a href="/use_cases/Fed-BioMed%20at%20Hospital-Centre-Henri-Becquerel-of-Rouen/">
+              <img src="/assets/img/projects/CHB_team.jpg" 
+                   srcset="/assets/img/projects/CHB_team.jpg 2x" 
+                   alt="Fed-BioMed at Hospital Centre Henri Becquerel of Rouen" />
+            </a>
+          </figure>
+          <div class="project-details d-flex justify-content-center flex-column">
+            <div class="post-header">
+              <div class="post-category text-line mb-3 text-research context">Research Context</div>
+              <h2 class="post-title h3">Fed-BioMed at Hospital Centre Henri Becquerel of Rouen</h2>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project item col-md-6 col-xl-4 research-context">
+          <figure class="lift rounded mb-6">
+            <a href="/use_cases/Fed-BioMed-for-oncology-research/">
+              <img src="/assets/img/projects/antoine_lacassagne.png" 
+                   srcset="/assets/img/projects/antoine_lacassagne.png 2x" 
+                   alt="Fed-BioMed for oncology research" />
+            </a>
+          </figure>
+          <div class="project-details d-flex justify-content-center flex-column">
+            <div class="post-header">
+              <div class="post-category text-line mb-3 text-research context">Research Context</div>
+              <h2 class="post-title h3">Fed-BioMed for oncology research</h2>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project item col-md-6 col-xl-4 research-context">
+          <figure class="lift rounded mb-6">
+            <a href="/use_cases/Real-world-Federated-Learning-for-Cardiac-CT-Imaging/">
+              <img src="/assets/img/projects/CTimaging.png" 
+                   srcset="/assets/img/projects/CTimaging.png 2x" 
+                   alt="Real-world Federated Learning for Cardiac CT Imaging" />
+            </a>
+          </figure>
+          <div class="project-details d-flex justify-content-center flex-column">
+            <div class="post-header">
+              <div class="post-category text-line mb-3 text-research context">Research Context</div>
+              <h2 class="post-title h3">Real-world Federated Learning for Cardiac CT Imaging</h2>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project item col-md-6 col-xl-4 research-context">
+          <figure class="lift rounded mb-6">
+            <a href="/use_cases/Fed-BioMed%20for%20FEDERATED-LUNG%20project/">
+              <img src="/assets/img/projects/usecase.png" 
+                   srcset="/assets/img/projects/usecase.png 2x" 
+                   alt="Fed-BioMed for FEDERATED-LUNG project" />
+            </a>
+          </figure>
+          <div class="project-details d-flex justify-content-center flex-column">
+            <div class="post-header">
+              <div class="post-category text-line mb-3 text-research context">Research Context</div>
+              <h2 class="post-title h3">Fed-BioMed for FEDERATED-LUNG project</h2>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project item col-md-6 col-xl-4 research-context">
+          <figure class="lift rounded mb-6">
+            <a href="/use_cases/Fed-BioMed-for-Federated-PET-project/">
+              <img src="/assets/img/projects/usecase.png" 
+                   srcset="/assets/img/projects/usecase.png 2x" 
+                   alt="Fed-BioMed for Federated-PET project" />
+            </a>
+          </figure>
+          <div class="project-details d-flex justify-content-center flex-column">
+            <div class="post-header">
+              <div class="post-category text-line mb-3 text-research context">Research Context</div>
+              <h2 class="post-title h3">Fed-BioMed for Federated-PET project</h2>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project item col-md-6 col-xl-4 research-context">
+          <figure class="lift rounded mb-6">
+            <a href="/use_cases/DTRIP4H/">
+              <img src="/assets/img/projects/DTRIP4H.avif" 
+                   srcset="/assets/img/projects/DTRIP4H.avif 2x" 
+                   alt="DTRIP4H" />
+            </a>
+          </figure>
+          <div class="project-details d-flex justify-content-center flex-column">
+            <div class="post-header">
+              <div class="post-category text-line mb-3 text-research context">Research Context</div>
+              <h2 class="post-title h3">DTRIP4H</h2>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="container pb-15 pb-md-17">
+    <div class="card">
+      <div class="card-footer border-0 position-relative">
+        <a class="collapse-link collapsed" data-bs-toggle="collapse" href="#collapse-snippet-5-html">
+          View HTML code
+        </a>
+      </div>
+      <div id="collapse-snippet-5-html" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+            <button class="btn-clipboard" data-clipboard-target="#html5">Copy</button>
+            <div id="html5">
+              <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"wrapper bg-light"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container py-14 py-md-16"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-9 col-xl-8 col-xxl-7 mx-auto mb-8"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"fs-15 text-uppercase text-muted text-center mb-3"</span><span class="nt">&gt;</span>Our Projects<span class="nt">&lt;/h2&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"display-4 text-center"</span><span class="nt">&gt;</span>Check out some of our awesome projects with creative ideas and great design.<span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid grid-view projects-masonry"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row gx-md-8 gy-10 gy-md-13 isotope"</span><span class="nt">&gt;</span>
+        {% assign projects = site.use_cases | where_exp: "item", "item.category != nil" %}
+        {% for project in projects %}
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"project item col-md-6 col-xl-4 {{ project.category | downcase | replace: ' ', '-' }}"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"lift rounded mb-6"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ project.url }}"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"{{ project.thumbnail }}"</span> 
+                   <span class="na">srcset=</span><span class="s">"{{ project.thumbnail | replace: '.webp', '@2x.webp' }} 2x"</span> 
+                   <span class="na">alt=</span><span class="s">"{{ project.title }}"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/figure&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"project-details d-flex justify-content-center flex-column"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-header"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-category text-line mb-3 text-{{ project.category | downcase }}"</span><span class="nt">&gt;</span>{{ project.category }}<span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"post-title h3"</span><span class="nt">&gt;</span>{{ project.title }}<span class="nt">&lt;/h2&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        {% endfor %}
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+              </code></pre></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- YAML Configuration -->
+      <div class="card-footer border-0 position-relative">
+        <a class="collapse-link collapsed" data-bs-toggle="collapse" href="#collapse-snippet-5-yaml">
+          View YAML Configuration
+        </a>
+      </div>
+      <div id="collapse-snippet-5-yaml" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+            <button class="btn-clipboard" data-clipboard-target="#yaml5">Copy</button>
+            <div id="yaml5">
+              <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">portfolio5</span><span class="pi">:</span>
+  <span class="na">enable</span><span class="pi">:</span> <span class="kc">true</span>
+  <span class="na">content</span><span class="pi">:</span>
+    <span class="na">subtitle</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Our</span><span class="nv"> </span><span class="s">Projects"</span>
+    <span class="na">subtitle_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fs-15</span><span class="nv"> </span><span class="s">text-uppercase</span><span class="nv"> </span><span class="s">text-muted</span><span class="nv"> </span><span class="s">text-center</span><span class="nv"> </span><span class="s">mb-3"</span>
+    <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Check</span><span class="nv"> </span><span class="s">out</span><span class="nv"> </span><span class="s">some</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">our</span><span class="nv"> </span><span class="s">awesome</span><span class="nv"> </span><span class="s">projects</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">creative</span><span class="nv"> </span><span class="s">ideas</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">great</span><span class="nv"> </span><span class="s">design."</span>
+    <span class="na">title_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">display-4</span><span class="nv"> </span><span class="s">text-center"</span>
+  <span class="na">grid</span><span class="pi">:</span>
+    <span class="na">classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">gx-md-8</span><span class="nv"> </span><span class="s">gy-10</span><span class="nv"> </span><span class="s">gy-md-13</span><span class="nv"> </span><span class="s">isotope"</span>
+    <span class="na">wrapper_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">grid</span><span class="nv"> </span><span class="s">grid-view</span><span class="nv"> </span><span class="s">projects-masonry"</span>
+  <span class="na">project</span><span class="pi">:</span>
+    <span class="na">column_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-md-6</span><span class="nv"> </span><span class="s">col-xl-4"</span>
+    <span class="na">figure_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">lift</span><span class="nv"> </span><span class="s">rounded</span><span class="nv"> </span><span class="s">mb-6"</span>
+    <span class="na">details_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">d-flex</span><span class="nv"> </span><span class="s">justify-content-center</span><span class="nv"> </span><span class="s">flex-column"</span>
+    <span class="na">category_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">post-category</span><span class="nv"> </span><span class="s">text-line</span><span class="nv"> </span><span class="s">mb-3"</span>
+    <span class="na">title_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">post-title</span><span class="nv"> </span><span class="s">h3"</span>
+              </code></pre></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- /section -->
+    
+<section id="snippet-6" class="wrapper bg-light wrapper-border">
+  <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
+    <div class="row align-items-center mb-10">
+      <div class="col-md-8 col-lg-9 col-xl-8 col-xxl-7 pe-xl-20">
+        <h2 class="display-4 mb-3">Latest Projects</h2>
+        <p class="lead fs-20 mb-0">Check out some of my latest projects with creative ideas.</p>
+      </div>
+      <div class="col-md-4 col-lg-3 ms-md-auto text-md-end mt-5 mt-md-0">
+        <a href="#" class="btn btn-primary rounded-pill mb-0">
+          See All Projects
+        </a>
+      </div>
+    </div>
+
+    
+    
+    
+    <div class="card bg-soft-violet mb-10">
+      <div class="card-body p-12 pb-0">
+        <div class="row ">
+          <div class="col-lg-4 pb-12 align-self-center">
+            <div class="post-category mb-3 text-violet">Research Context</div>
+            <h3 class="h1 post-title mb-3">CAL Fed-BioMed Experiment</h3>
+            <p>We are proud to announce the successful deployment and testing of Fed-BioMed into the Hospital Antoine Lacassagne (CAL) of Nice!</p>
+            <a href="/use_cases/CAL-Fed-BioMed-Experiment/" class="more hover link-violet">See Project</a>
+          </div>
+          <div class="col-lg-7 offset-lg-1 align-self-end">
+            <figure>
+              <img class="img-fluid" 
+                   src="/assets/img/projects/Photo_CAL.jpg" 
+                   srcset="/assets/img/projects/Photo_CAL.jpg 2x" 
+                   alt="CAL Fed-BioMed Experiment" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card bg-soft-blue mb-10">
+      <div class="card-body p-12 ">
+        <div class="row gy-10 align-items-center">
+          <div class="col-lg-4 order-lg-2 offset-lg-1">
+            <div class="post-category mb-3 text-blue">Research Context</div>
+            <h3 class="h1 post-title mb-3">Fed-BioMed for FEDERATED-LUNG project</h3>
+            <p>FEDERATED-LUNG is a multicentric research project that builds upon the foundations of FEDERATED-PET to further advance the use of artificial intelligence and medical imaging in the management of metastatic lung cancer.</p>
+            <a href="/use_cases/Fed-BioMed%20for%20FEDERATED-LUNG%20project/" class="more hover link-blue">See Project</a>
+          </div>
+          <div class="col-lg-7">
+            <figure>
+              <img class="img-fluid" 
+                   src="/assets/img/projects/usecase.png" 
+                   srcset="/assets/img/projects/usecase.png 2x" 
+                   alt="Fed-BioMed for FEDERATED-LUNG project" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="row gx-md-8 gx-xl-10">
+      
+      
+      
+      <div class="col-lg-6">
+        <div class="card bg-soft-leaf mb-10 mb-lg-0">
+          <div class="card-body p-12 pb-0">
+            <div class="post-category mb-3 text-leaf">Research Context</div>
+            <h3 class="h1 post-title mb-3">Fed-BioMed for Federated-PET project</h3>
+            <p>Federated-PET groups 8 hospitals and 4 research centers in an oncology research project.</p>
+            <a href="/use_cases/Fed-BioMed-for-Federated-PET-project/" class="more hover link-leaf mb-8">See Project</a>
+          </div>
+          <img class="card-img-bottom" 
+               src="/assets/img/projects/usecase.png" 
+               srcset="/assets/img/projects/usecase.png 2x" 
+               alt="Fed-BioMed for Federated-PET project" />
+        </div>
+      </div>
+      
+      
+      <div class="col-lg-6">
+        <div class="card bg-soft-pink ">
+          <div class="card-body p-12 pb-0">
+            <div class="post-category mb-3 text-pink">Research Context</div>
+            <h3 class="h1 post-title mb-3">Fed-BioMed for FEDERATED-LUNG project</h3>
+            <p>FEDERATED-LUNG is a multicentric research project that builds upon the foundations of FEDERATED-PET to further advance the use of artificial intelligence and medical imaging in the management of metastatic lung cancer.</p>
+            <a href="/use_cases/Fed-BioMed%20for%20FEDERATED-LUNG%20project/" class="more hover link-pink mb-8">See Project</a>
+          </div>
+          <img class="card-img-bottom" 
+               src="/assets/img/projects/usecase.png" 
+               srcset="/assets/img/projects/usecase.png 2x" 
+               alt="Fed-BioMed for FEDERATED-LUNG project" />
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- /.container -->
+
+  <div class="container pb-15 pb-md-17">
+    <div class="card">
+      <div class="card-footer border-0 position-relative">
+        <a class="collapse-link collapsed" data-bs-toggle="collapse" href="#collapse-snippet-6-html">
+          View HTML code
+        </a>
+      </div>
+      <div id="collapse-snippet-6-html" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+            <button class="btn-clipboard" data-clipboard-target="#html6">Copy</button>
+            <div id="html6">
+              <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"wrapper bg-light"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container py-14 pt-md-16"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row align-items-center mb-10"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-8 col-lg-9 col-xl-8 col-xxl-7 pe-xl-20"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"display-4 mb-3"</span><span class="nt">&gt;</span>{{ page.portfolio6.content.title }}<span class="nt">&lt;/h2&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"lead fs-20 mb-0"</span><span class="nt">&gt;</span>{{ page.portfolio6.content.subtitle }}<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4 col-lg-3 ms-md-auto text-md-end mt-5 mt-md-0"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ page.portfolio6.content.button.url }}"</span> <span class="na">class=</span><span class="s">"{{ page.portfolio6.content.button.classes }}"</span><span class="nt">&gt;</span>
+          {{ page.portfolio6.content.button.text }}
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    {% assign featured_projects = site.use_cases | where: "featured", true | limit: 2 %}
+    {% for project in featured_projects %}
+    {% assign config = page.portfolio6.featured_projects[forloop.index0] %}
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card bg-soft-{{ config.color }} mb-10"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body p-12 {% if forloop.first %}pb-0{% endif %}"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row {% if config.layout == 'image-left' %}gy-10 align-items-center{% endif %}"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"{{ config.column_content }}"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-category mb-3 text-{{ config.color }}"</span><span class="nt">&gt;</span>{{ project.category }}<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"h1 post-title mb-3"</span><span class="nt">&gt;</span>{{ project.title }}<span class="nt">&lt;/h3&gt;</span>
+            <span class="nt">&lt;p&gt;</span>{{ project.description }}<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ project.url }}"</span> <span class="na">class=</span><span class="s">"more hover link-{{ config.color }}"</span><span class="nt">&gt;</span>See Project<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"{{ config.column_image }}"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;figure&gt;</span>
+              <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"img-fluid"</span> <span class="na">src=</span><span class="s">"{{ project.thumbnail }}"</span> 
+                   <span class="na">srcset=</span><span class="s">"{{ project.thumbnail | replace: '.webp', '@2x.webp' }} 2x"</span> 
+                   <span class="na">alt=</span><span class="s">"{{ project.title }}"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;/figure&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    {% endfor %}
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row gx-md-8 gx-xl-10"</span><span class="nt">&gt;</span>
+      {% assign small_projects = site.use_cases | where: "featured", false | limit: 2 %}
+      {% for project in small_projects %}
+      {% assign color = page.portfolio6.small_projects.colors[forloop.index0] %}
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"{{ page.portfolio6.small_projects.column_classes }}"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card bg-soft-{{ color }} {% unless forloop.last %}mb-10 mb-lg-0{% endunless %}"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body p-12 pb-0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-category mb-3 text-{{ color }}"</span><span class="nt">&gt;</span>{{ project.category }}<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"h1 post-title mb-3"</span><span class="nt">&gt;</span>{{ project.title }}<span class="nt">&lt;/h3&gt;</span>
+            <span class="nt">&lt;p&gt;</span>{{ project.description }}<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ project.url }}"</span> <span class="na">class=</span><span class="s">"more hover link-{{ color }} mb-8"</span><span class="nt">&gt;</span>See Project<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-bottom"</span> <span class="na">src=</span><span class="s">"{{ project.thumbnail }}"</span> 
+               <span class="na">srcset=</span><span class="s">"{{ project.thumbnail | replace: '.webp', '@2x.webp' }} 2x"</span> 
+               <span class="na">alt=</span><span class="s">"{{ project.title }}"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      {% endfor %}
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+
+              </code></pre></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- YAML Configuration -->
+      <div class="card-footer border-0 position-relative">
+        <a class="collapse-link collapsed" data-bs-toggle="collapse" href="#collapse-snippet-6-yaml">
+          View YAML Configuration
+        </a>
+      </div>
+      <div id="collapse-snippet-6-yaml" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+            <button class="btn-clipboard" data-clipboard-target="#yaml6">Copy</button>
+            <div id="yaml6">
+              <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">portfolio6</span><span class="pi">:</span>
+  <span class="na">enable</span><span class="pi">:</span> <span class="kc">true</span>
+  <span class="na">content</span><span class="pi">:</span>
+    <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Latest</span><span class="nv"> </span><span class="s">Projects"</span>
+    <span class="na">title_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">display-4</span><span class="nv"> </span><span class="s">mb-3"</span>
+    <span class="na">subtitle</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Check</span><span class="nv"> </span><span class="s">out</span><span class="nv"> </span><span class="s">some</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">my</span><span class="nv"> </span><span class="s">latest</span><span class="nv"> </span><span class="s">projects</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">creative</span><span class="nv"> </span><span class="s">ideas."</span>
+    <span class="na">subtitle_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">lead</span><span class="nv"> </span><span class="s">fs-20</span><span class="nv"> </span><span class="s">mb-0"</span>
+    <span class="na">button</span><span class="pi">:</span>
+      <span class="na">text</span><span class="pi">:</span> <span class="s2">"</span><span class="s">See</span><span class="nv"> </span><span class="s">All</span><span class="nv"> </span><span class="s">Projects"</span>
+      <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">#"</span>
+      <span class="na">classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">btn</span><span class="nv"> </span><span class="s">btn-primary</span><span class="nv"> </span><span class="s">rounded-pill</span><span class="nv"> </span><span class="s">mb-0"</span>
+  <span class="na">layout</span><span class="pi">:</span>
+    <span class="na">header_column</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-md-8</span><span class="nv"> </span><span class="s">col-lg-9</span><span class="nv"> </span><span class="s">col-xl-8</span><span class="nv"> </span><span class="s">col-xxl-7</span><span class="nv"> </span><span class="s">pe-xl-20"</span>
+    <span class="na">button_column</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-md-4</span><span class="nv"> </span><span class="s">col-lg-3</span><span class="nv"> </span><span class="s">ms-md-auto</span><span class="nv"> </span><span class="s">text-md-end</span><span class="nv"> </span><span class="s">mt-5</span><span class="nv"> </span><span class="s">mt-md-0"</span>
+  <span class="na">featured_projects</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">color</span><span class="pi">:</span> <span class="s2">"</span><span class="s">violet"</span>
+      <span class="na">layout</span><span class="pi">:</span> <span class="s2">"</span><span class="s">image-right"</span>
+      <span class="na">column_content</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-lg-4</span><span class="nv"> </span><span class="s">pb-12</span><span class="nv"> </span><span class="s">align-self-center"</span>
+      <span class="na">column_image</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-lg-7</span><span class="nv"> </span><span class="s">offset-lg-1</span><span class="nv"> </span><span class="s">align-self-end"</span>
+    <span class="pi">-</span> <span class="na">color</span><span class="pi">:</span> <span class="s2">"</span><span class="s">blue"</span>
+      <span class="na">layout</span><span class="pi">:</span> <span class="s2">"</span><span class="s">image-left"</span>
+      <span class="na">column_content</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-lg-4</span><span class="nv"> </span><span class="s">order-lg-2</span><span class="nv"> </span><span class="s">offset-lg-1"</span>
+      <span class="na">column_image</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-lg-7"</span>
+  <span class="na">small_projects</span><span class="pi">:</span>
+    <span class="na">column_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-lg-6"</span>
+    <span class="na">colors</span><span class="pi">:</span> <span class="pi">[</span><span class="s2">"</span><span class="s">leaf"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">pink"</span><span class="pi">]</span>
+              </code></pre></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- /section -->
+    
+<section id="snippet-7" class="wrapper bg-light wrapper-border">
+  <div class="overflow-hidden">
+    <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
+      <div class="row">
+        <div class="col-lg-10 col-xl-9 col-xxl-8 mx-auto text-center">
+          <h2 class="fs-16 text-uppercase text-primary mb-3">Latest Projects</h2>
+          <h3 class="display-3 mb-10">Check out some of our awesome projects with creative ideas and great design.</h3>
+        </div>
+      </div>
+
+      <div class="swiper-container grid-view nav-bottom nav-color mb-14" 
+           data-margin="30" 
+           data-dots="false" 
+           data-nav="true" 
+           data-items-md="2" 
+           data-items-xs="1">
+        <div class="swiper overflow-visible">
+          <div class="swiper-wrapper">
+            
+            
+            <div class="swiper-slide">
+              <figure class="rounded mb-7">
+                <a href="/use_cases/DTRIP4H/">
+                  <img src="/assets/img/projects/DTRIP4H.avif" 
+                       srcset="/assets/img/projects/DTRIP4H.avif 2x" 
+                       alt="DTRIP4H" />
+                </a>
+              </figure>
+              <div class="project-details d-flex justify-content-center flex-column">
+                <div class="post-header">
+                  <h2 class="post-title h3">
+                    <a href="/use_cases/DTRIP4H/" class="link-dark">DTRIP4H</a>
+                  </h2>
+                  <div class="post-category text-ash">Research Context</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <figure class="rounded mb-7">
+                <a href="/use_cases/Fed-BioMed-for-Federated-PET-project/">
+                  <img src="/assets/img/projects/usecase.png" 
+                       srcset="/assets/img/projects/usecase.png 2x" 
+                       alt="Fed-BioMed for Federated-PET project" />
+                </a>
+              </figure>
+              <div class="project-details d-flex justify-content-center flex-column">
+                <div class="post-header">
+                  <h2 class="post-title h3">
+                    <a href="/use_cases/Fed-BioMed-for-Federated-PET-project/" class="link-dark">Fed-BioMed for Federated-PET project</a>
+                  </h2>
+                  <div class="post-category text-ash">Research Context</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <figure class="rounded mb-7">
+                <a href="/use_cases/Fed-BioMed%20for%20FEDERATED-LUNG%20project/">
+                  <img src="/assets/img/projects/usecase.png" 
+                       srcset="/assets/img/projects/usecase.png 2x" 
+                       alt="Fed-BioMed for FEDERATED-LUNG project" />
+                </a>
+              </figure>
+              <div class="project-details d-flex justify-content-center flex-column">
+                <div class="post-header">
+                  <h2 class="post-title h3">
+                    <a href="/use_cases/Fed-BioMed%20for%20FEDERATED-LUNG%20project/" class="link-dark">Fed-BioMed for FEDERATED-LUNG project</a>
+                  </h2>
+                  <div class="post-category text-ash">Research Context</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <figure class="rounded mb-7">
+                <a href="/use_cases/Real-world-Federated-Learning-for-Cardiac-CT-Imaging/">
+                  <img src="/assets/img/projects/CTimaging.png" 
+                       srcset="/assets/img/projects/CTimaging.png 2x" 
+                       alt="Real-world Federated Learning for Cardiac CT Imaging" />
+                </a>
+              </figure>
+              <div class="project-details d-flex justify-content-center flex-column">
+                <div class="post-header">
+                  <h2 class="post-title h3">
+                    <a href="/use_cases/Real-world-Federated-Learning-for-Cardiac-CT-Imaging/" class="link-dark">Real-world Federated Learning for Cardiac CT Imaging</a>
+                  </h2>
+                  <div class="post-category text-ash">Research Context</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <figure class="rounded mb-7">
+                <a href="/use_cases/Fed-BioMed-for-oncology-research/">
+                  <img src="/assets/img/projects/antoine_lacassagne.png" 
+                       srcset="/assets/img/projects/antoine_lacassagne.png 2x" 
+                       alt="Fed-BioMed for oncology research" />
+                </a>
+              </figure>
+              <div class="project-details d-flex justify-content-center flex-column">
+                <div class="post-header">
+                  <h2 class="post-title h3">
+                    <a href="/use_cases/Fed-BioMed-for-oncology-research/" class="link-dark">Fed-BioMed for oncology research</a>
+                  </h2>
+                  <div class="post-category text-ash">Research Context</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <figure class="rounded mb-7">
+                <a href="/use_cases/Fed-BioMed%20at%20Hospital-Centre-Henri-Becquerel-of-Rouen/">
+                  <img src="/assets/img/projects/CHB_team.jpg" 
+                       srcset="/assets/img/projects/CHB_team.jpg 2x" 
+                       alt="Fed-BioMed at Hospital Centre Henri Becquerel of Rouen" />
+                </a>
+              </figure>
+              <div class="project-details d-flex justify-content-center flex-column">
+                <div class="post-header">
+                  <h2 class="post-title h3">
+                    <a href="/use_cases/Fed-BioMed%20at%20Hospital-Centre-Henri-Becquerel-of-Rouen/" class="link-dark">Fed-BioMed at Hospital Centre Henri Becquerel of Rouen</a>
+                  </h2>
+                  <div class="post-category text-ash">Research Context</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <figure class="rounded mb-7">
+                <a href="/use_cases/CAL-Fed-BioMed-Experiment/">
+                  <img src="/assets/img/projects/Photo_CAL.jpg" 
+                       srcset="/assets/img/projects/Photo_CAL.jpg 2x" 
+                       alt="CAL Fed-BioMed Experiment" />
+                </a>
+              </figure>
+              <div class="project-details d-flex justify-content-center flex-column">
+                <div class="post-header">
+                  <h2 class="post-title h3">
+                    <a href="/use_cases/CAL-Fed-BioMed-Experiment/" class="link-dark">CAL Fed-BioMed Experiment</a>
+                  </h2>
+                  <div class="post-category text-ash">Research Context</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <figure class="rounded mb-7">
+                <a href="/use_cases/Federated-Learning-for-Multi-Institution-Oncology-Collaboration/">
+                  <img src="/assets/img/projects/research.png" 
+                       srcset="/assets/img/projects/research.png 2x" 
+                       alt="Federated Learning for Multi-Institution Oncology Collaboration" />
+                </a>
+              </figure>
+              <div class="project-details d-flex justify-content-center flex-column">
+                <div class="post-header">
+                  <h2 class="post-title h3">
+                    <a href="/use_cases/Federated-Learning-for-Multi-Institution-Oncology-Collaboration/" class="link-dark">Federated Learning for Multi-Institution Oncology Collaboration</a>
+                  </h2>
+                  <div class="post-category text-ash">Use Case</div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pb-15 pb-md-17">
+    <div class="card">
+      <div class="card-footer border-0 position-relative">
+        <a class="collapse-link collapsed" data-bs-toggle="collapse" href="#collapse-snippet-7-html">
+          View HTML code
+        </a>
+      </div>
+      <div id="collapse-snippet-7-html" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+            <button class="btn-clipboard" data-clipboard-target="#html7">Copy</button>
+            <div id="html7">
+              <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"wrapper bg-light wrapper-border"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-hidden"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container pt-15 pt-md-17 pb-13 pb-md-15"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"{{ page.portfolio7.layout.header_column }}"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"{{ page.portfolio7.content.subtitle_classes }}"</span><span class="nt">&gt;</span>{{ page.portfolio7.content.subtitle }}<span class="nt">&lt;/h2&gt;</span>
+          <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"{{ page.portfolio7.content.title_classes }}"</span><span class="nt">&gt;</span>{{ page.portfolio7.content.title }}<span class="nt">&lt;/h3&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper-container {{ page.portfolio7.swiper.classes }}"</span> 
+           <span class="na">data-margin=</span><span class="s">"{{ page.portfolio7.swiper.margin }}"</span> 
+           <span class="na">data-dots=</span><span class="s">"{{ page.portfolio7.swiper.dots }}"</span> 
+           <span class="na">data-nav=</span><span class="s">"{{ page.portfolio7.swiper.nav }}"</span> 
+           <span class="na">data-items-md=</span><span class="s">"{{ page.portfolio7.swiper.items.md }}"</span> 
+           <span class="na">data-items-xs=</span><span class="s">"{{ page.portfolio7.swiper.items.xs }}"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper overflow-visible"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper-wrapper"</span><span class="nt">&gt;</span>
+            {% assign projects = site.use_cases | sort: 'date' | reverse %}
+            {% for project in projects %}
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper-slide"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"{{ page.portfolio7.project.figure_classes }}"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ project.url }}"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"{{ project.thumbnail }}"</span> 
+                       <span class="na">srcset=</span><span class="s">"{{ project.thumbnail | replace: '.webp', '@2x.webp' }} 2x"</span> 
+                       <span class="na">alt=</span><span class="s">"{{ project.title }}"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;/a&gt;</span>
+              <span class="nt">&lt;/figure&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"project-details {{ page.portfolio7.project.details_classes }}"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-header"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"{{ page.portfolio7.project.title_classes }}"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ project.url }}"</span> <span class="na">class=</span><span class="s">"link-dark"</span><span class="nt">&gt;</span>{{ project.title }}<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/h2&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"{{ page.portfolio7.project.category_classes }}"</span><span class="nt">&gt;</span>{{ project.category }}<span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            {% endfor %}
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+
+              </code></pre></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- YAML Configuration -->
+      <div class="card-footer border-0 position-relative">
+        <a class="collapse-link collapsed" data-bs-toggle="collapse" href="#collapse-snippet-7-yaml">
+          View YAML Configuration
+        </a>
+      </div>
+      <div id="collapse-snippet-7-yaml" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+            <button class="btn-clipboard" data-clipboard-target="#yaml7">Copy</button>
+            <div id="yaml7">
+              <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">portfolio7</span><span class="pi">:</span>
+  <span class="na">enable</span><span class="pi">:</span> <span class="kc">true</span>
+  <span class="na">content</span><span class="pi">:</span>
+    <span class="na">subtitle</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Latest</span><span class="nv"> </span><span class="s">Projects"</span>
+    <span class="na">subtitle_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fs-16</span><span class="nv"> </span><span class="s">text-uppercase</span><span class="nv"> </span><span class="s">text-primary</span><span class="nv"> </span><span class="s">mb-3"</span>
+    <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Check</span><span class="nv"> </span><span class="s">out</span><span class="nv"> </span><span class="s">some</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">our</span><span class="nv"> </span><span class="s">awesome</span><span class="nv"> </span><span class="s">projects</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">creative</span><span class="nv"> </span><span class="s">ideas</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">great</span><span class="nv"> </span><span class="s">design."</span>
+    <span class="na">title_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">display-3</span><span class="nv"> </span><span class="s">mb-10"</span>
+  <span class="na">layout</span><span class="pi">:</span>
+    <span class="na">header_column</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-lg-10</span><span class="nv"> </span><span class="s">col-xl-9</span><span class="nv"> </span><span class="s">col-xxl-8</span><span class="nv"> </span><span class="s">mx-auto</span><span class="nv"> </span><span class="s">text-center"</span>
+  <span class="na">swiper</span><span class="pi">:</span>
+    <span class="na">margin</span><span class="pi">:</span> <span class="m">30</span>
+    <span class="na">dots</span><span class="pi">:</span> <span class="kc">false</span>
+    <span class="na">nav</span><span class="pi">:</span> <span class="kc">true</span>
+    <span class="na">items</span><span class="pi">:</span>
+      <span class="na">md</span><span class="pi">:</span> <span class="m">2</span>
+      <span class="na">xs</span><span class="pi">:</span> <span class="m">1</span>
+    <span class="na">classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">grid-view</span><span class="nv"> </span><span class="s">nav-bottom</span><span class="nv"> </span><span class="s">nav-color</span><span class="nv"> </span><span class="s">mb-14"</span>
+  <span class="na">project</span><span class="pi">:</span>
+    <span class="na">figure_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">rounded</span><span class="nv"> </span><span class="s">mb-7"</span>
+    <span class="na">details_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">d-flex</span><span class="nv"> </span><span class="s">justify-content-center</span><span class="nv"> </span><span class="s">flex-column"</span>
+    <span class="na">title_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">post-title</span><span class="nv"> </span><span class="s">h3"</span>
+    <span class="na">category_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">post-category</span><span class="nv"> </span><span class="s">text-ash"</span>
+              </code></pre></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- /section -->
+    
+<section id="snippet-8" class="wrapper bg-light wrapper-border">
+  <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
+    <div class="row">
+      <div class="col-lg-11 col-xl-10 mx-auto mb-10">
+        <h2 class="fs-16 text-uppercase text-muted text-center mb-3">Our Projects</h2>
+        <h3 class="display-3 text-center px-lg-5 px-xl-10 px-xxl-16 mb-0">Check out some of our awesome projects with creative ideas and great design.</h3>
+      </div>
+    </div>
+
+    <div class="grid grid-view projects-masonry">
+      <div class="row gx-md-8 gy-10 gy-md-13 isotope">
+        
+        
+        <div class="project item col-md-6 col-xl-4">
+          <figure class="rounded mb-6">
+            <img src="/assets/img/projects/research.png" 
+                 srcset="/assets/img/projects/research.png 2x" 
+                 alt="Federated Learning for Multi-Institution Oncology Collaboration" />
+            
+            <a class="item-link" 
+               href="/assets/img/projects/research.png" 
+               data-glightbox 
+               data-gallery="projects-group">
+              <i class="uil uil-focus-add"></i>
+            </a>
+            
+          </figure>
+          <div class="project-details d-flex justify-content-center flex-column">
+            <div class="post-header">
+              <h2 class="post-title h3 fs-22">
+                <a href="/use_cases/Federated-Learning-for-Multi-Institution-Oncology-Collaboration/" class="link-dark">Federated Learning for Multi-Institution Oncology Collaboration</a>
+              </h2>
+              <div class="post-category text-ash">Use Case</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project item col-md-6 col-xl-4">
+          <figure class="rounded mb-6">
+            <img src="/assets/img/projects/Photo_CAL.jpg" 
+                 srcset="/assets/img/projects/Photo_CAL.jpg 2x" 
+                 alt="CAL Fed-BioMed Experiment" />
+            
+            <a class="item-link" 
+               href="/assets/img/projects/Photo_CAL.jpg" 
+               data-glightbox 
+               data-gallery="projects-group">
+              <i class="uil uil-focus-add"></i>
+            </a>
+            
+          </figure>
+          <div class="project-details d-flex justify-content-center flex-column">
+            <div class="post-header">
+              <h2 class="post-title h3 fs-22">
+                <a href="/use_cases/CAL-Fed-BioMed-Experiment/" class="link-dark">CAL Fed-BioMed Experiment</a>
+              </h2>
+              <div class="post-category text-ash">Research Context</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project item col-md-6 col-xl-4">
+          <figure class="rounded mb-6">
+            <img src="/assets/img/projects/CHB_team.jpg" 
+                 srcset="/assets/img/projects/CHB_team.jpg 2x" 
+                 alt="Fed-BioMed at Hospital Centre Henri Becquerel of Rouen" />
+            
+            <a class="item-link" 
+               href="/assets/img/projects/CHB_team.jpg" 
+               data-glightbox 
+               data-gallery="projects-group">
+              <i class="uil uil-focus-add"></i>
+            </a>
+            
+          </figure>
+          <div class="project-details d-flex justify-content-center flex-column">
+            <div class="post-header">
+              <h2 class="post-title h3 fs-22">
+                <a href="/use_cases/Fed-BioMed%20at%20Hospital-Centre-Henri-Becquerel-of-Rouen/" class="link-dark">Fed-BioMed at Hospital Centre Henri Becquerel of Rouen</a>
+              </h2>
+              <div class="post-category text-ash">Research Context</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project item col-md-6 col-xl-4">
+          <figure class="rounded mb-6">
+            <img src="/assets/img/projects/antoine_lacassagne.png" 
+                 srcset="/assets/img/projects/antoine_lacassagne.png 2x" 
+                 alt="Fed-BioMed for oncology research" />
+            
+            <a class="item-link" 
+               href="/assets/img/projects/antoine_lacassagne.png" 
+               data-glightbox 
+               data-gallery="projects-group">
+              <i class="uil uil-focus-add"></i>
+            </a>
+            
+          </figure>
+          <div class="project-details d-flex justify-content-center flex-column">
+            <div class="post-header">
+              <h2 class="post-title h3 fs-22">
+                <a href="/use_cases/Fed-BioMed-for-oncology-research/" class="link-dark">Fed-BioMed for oncology research</a>
+              </h2>
+              <div class="post-category text-ash">Research Context</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project item col-md-6 col-xl-4">
+          <figure class="rounded mb-6">
+            <img src="/assets/img/projects/CTimaging.png" 
+                 srcset="/assets/img/projects/CTimaging.png 2x" 
+                 alt="Real-world Federated Learning for Cardiac CT Imaging" />
+            
+            <a class="item-link" 
+               href="/assets/img/projects/CTimaging.png" 
+               data-glightbox 
+               data-gallery="projects-group">
+              <i class="uil uil-focus-add"></i>
+            </a>
+            
+          </figure>
+          <div class="project-details d-flex justify-content-center flex-column">
+            <div class="post-header">
+              <h2 class="post-title h3 fs-22">
+                <a href="/use_cases/Real-world-Federated-Learning-for-Cardiac-CT-Imaging/" class="link-dark">Real-world Federated Learning for Cardiac CT Imaging</a>
+              </h2>
+              <div class="post-category text-ash">Research Context</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project item col-md-6 col-xl-4">
+          <figure class="rounded mb-6">
+            <img src="/assets/img/projects/usecase.png" 
+                 srcset="/assets/img/projects/usecase.png 2x" 
+                 alt="Fed-BioMed for FEDERATED-LUNG project" />
+            
+            <a class="item-link" 
+               href="/assets/img/projects/usecase.png" 
+               data-glightbox 
+               data-gallery="projects-group">
+              <i class="uil uil-focus-add"></i>
+            </a>
+            
+          </figure>
+          <div class="project-details d-flex justify-content-center flex-column">
+            <div class="post-header">
+              <h2 class="post-title h3 fs-22">
+                <a href="/use_cases/Fed-BioMed%20for%20FEDERATED-LUNG%20project/" class="link-dark">Fed-BioMed for FEDERATED-LUNG project</a>
+              </h2>
+              <div class="post-category text-ash">Research Context</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project item col-md-6 col-xl-4">
+          <figure class="rounded mb-6">
+            <img src="/assets/img/projects/usecase.png" 
+                 srcset="/assets/img/projects/usecase.png 2x" 
+                 alt="Fed-BioMed for Federated-PET project" />
+            
+            <a class="item-link" 
+               href="/assets/img/projects/usecase.png" 
+               data-glightbox 
+               data-gallery="projects-group">
+              <i class="uil uil-focus-add"></i>
+            </a>
+            
+          </figure>
+          <div class="project-details d-flex justify-content-center flex-column">
+            <div class="post-header">
+              <h2 class="post-title h3 fs-22">
+                <a href="/use_cases/Fed-BioMed-for-Federated-PET-project/" class="link-dark">Fed-BioMed for Federated-PET project</a>
+              </h2>
+              <div class="post-category text-ash">Research Context</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project item col-md-6 col-xl-4">
+          <figure class="rounded mb-6">
+            <img src="/assets/img/projects/DTRIP4H.avif" 
+                 srcset="/assets/img/projects/DTRIP4H.avif 2x" 
+                 alt="DTRIP4H" />
+            
+            <a class="item-link" 
+               href="/assets/img/projects/DTRIP4H.avif" 
+               data-glightbox 
+               data-gallery="projects-group">
+              <i class="uil uil-focus-add"></i>
+            </a>
+            
+          </figure>
+          <div class="project-details d-flex justify-content-center flex-column">
+            <div class="post-header">
+              <h2 class="post-title h3 fs-22">
+                <a href="/use_cases/DTRIP4H/" class="link-dark">DTRIP4H</a>
+              </h2>
+              <div class="post-category text-ash">Research Context</div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="text-center mt-10">
+      <a href="#" class="btn btn-lg btn-primary rounded-pill">Start a Project</a>
+    </div>
+  </div>
+
+  <div class="container pb-15 pb-md-17">
+    <div class="card">
+      <div class="card-footer border-0 position-relative">
+        <a class="collapse-link collapsed" data-bs-toggle="collapse" href="#collapse-snippet-8-html">
+          View HTML code
+        </a>
+      </div>
+      <div id="collapse-snippet-8-html" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+            <button class="btn-clipboard" data-clipboard-target="#html8">Copy</button>
+            <div id="html8">
+              <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"wrapper bg-light wrapper-border"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container pt-15 pt-md-17 pb-13 pb-md-15"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"{{ page.portfolio8.layout.header_column }}"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"{{ page.portfolio8.content.subtitle_classes }}"</span><span class="nt">&gt;</span>{{ page.portfolio8.content.subtitle }}<span class="nt">&lt;/h2&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"{{ page.portfolio8.content.title_classes }}"</span><span class="nt">&gt;</span>{{ page.portfolio8.content.title }}<span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"{{ page.portfolio8.layout.grid_classes }}"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row {{ page.portfolio8.layout.row_classes }}"</span><span class="nt">&gt;</span>
+        {% assign projects = site.use_cases %}
+        {% for project in projects %}
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"project item {{ page.portfolio8.project.column_classes }}"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"{{ page.portfolio8.project.figure_classes }}"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"{{ project.thumbnail }}"</span> 
+                 <span class="na">srcset=</span><span class="s">"{{ project.thumbnail | replace: '.webp', '@2x.webp' }} 2x"</span> 
+                 <span class="na">alt=</span><span class="s">"{{ project.title }}"</span> <span class="nt">/&gt;</span>
+            {% if page.portfolio8.project.lightbox.enabled %}
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"item-link"</span> 
+               <span class="na">href=</span><span class="s">"{{ project.hero_image }}"</span> 
+               <span class="na">data-glightbox</span> 
+               <span class="na">data-gallery=</span><span class="s">"{{ page.portfolio8.project.lightbox.gallery_name }}"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"{{ page.portfolio8.project.lightbox.icon }}"</span><span class="nt">&gt;&lt;/i&gt;</span>
+            <span class="nt">&lt;/a&gt;</span>
+            {% endif %}
+          <span class="nt">&lt;/figure&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"project-details {{ page.portfolio8.project.details_classes }}"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-header"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"{{ page.portfolio8.project.title_classes }}"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ project.url }}"</span> <span class="na">class=</span><span class="s">"link-dark"</span><span class="nt">&gt;</span>{{ project.title }}<span class="nt">&lt;/a&gt;</span>
+              <span class="nt">&lt;/h2&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"{{ page.portfolio8.project.category_classes }}"</span><span class="nt">&gt;</span>{{ project.category }}<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        {% endfor %}
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-center mt-10"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-lg btn-primary rounded-pill"</span><span class="nt">&gt;</span>Start a Project<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+
+              </code></pre></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- YAML Configuration -->
+      <div class="card-footer border-0 position-relative">
+        <a class="collapse-link collapsed" data-bs-toggle="collapse" href="#collapse-snippet-8-yaml">
+          View YAML Configuration
+        </a>
+      </div>
+      <div id="collapse-snippet-8-yaml" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+            <button class="btn-clipboard" data-clipboard-target="#yaml8">Copy</button>
+            <div id="yaml8">
+              <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">portfolio8</span><span class="pi">:</span>
+  <span class="na">enable</span><span class="pi">:</span> <span class="kc">true</span>
+  <span class="na">content</span><span class="pi">:</span>
+    <span class="na">subtitle</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Our</span><span class="nv"> </span><span class="s">Projects"</span>
+    <span class="na">subtitle_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fs-16</span><span class="nv"> </span><span class="s">text-uppercase</span><span class="nv"> </span><span class="s">text-muted</span><span class="nv"> </span><span class="s">text-center</span><span class="nv"> </span><span class="s">mb-3"</span>
+    <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Check</span><span class="nv"> </span><span class="s">out</span><span class="nv"> </span><span class="s">some</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">our</span><span class="nv"> </span><span class="s">awesome</span><span class="nv"> </span><span class="s">projects</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">creative</span><span class="nv"> </span><span class="s">ideas</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">great</span><span class="nv"> </span><span class="s">design."</span>
+    <span class="na">title_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">display-3</span><span class="nv"> </span><span class="s">text-center</span><span class="nv"> </span><span class="s">px-lg-5</span><span class="nv"> </span><span class="s">px-xl-10</span><span class="nv"> </span><span class="s">px-xxl-16</span><span class="nv"> </span><span class="s">mb-0"</span>
+  <span class="na">layout</span><span class="pi">:</span>
+    <span class="na">header_column</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-lg-11</span><span class="nv"> </span><span class="s">col-xl-10</span><span class="nv"> </span><span class="s">mx-auto</span><span class="nv"> </span><span class="s">mb-10"</span>
+    <span class="na">grid_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">grid</span><span class="nv"> </span><span class="s">grid-view</span><span class="nv"> </span><span class="s">projects-masonry"</span>
+    <span class="na">row_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">gx-md-8</span><span class="nv"> </span><span class="s">gy-10</span><span class="nv"> </span><span class="s">gy-md-13</span><span class="nv"> </span><span class="s">isotope"</span>
+  <span class="na">project</span><span class="pi">:</span>
+    <span class="na">column_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-md-6</span><span class="nv"> </span><span class="s">col-xl-4"</span>
+    <span class="na">figure_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">rounded</span><span class="nv"> </span><span class="s">mb-6"</span>
+    <span class="na">details_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">d-flex</span><span class="nv"> </span><span class="s">justify-content-center</span><span class="nv"> </span><span class="s">flex-column"</span>
+    <span class="na">title_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">post-title</span><span class="nv"> </span><span class="s">h3</span><span class="nv"> </span><span class="s">fs-22"</span>
+    <span class="na">category_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">post-category</span><span class="nv"> </span><span class="s">text-ash"</span>
+    <span class="na">lightbox</span><span class="pi">:</span>
+      <span class="na">enabled</span><span class="pi">:</span> <span class="kc">true</span>
+      <span class="na">gallery_name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">projects-group"</span>
+      <span class="na">icon</span><span class="pi">:</span> <span class="s2">"</span><span class="s">uil</span><span class="nv"> </span><span class="s">uil-focus-add"</span>
+              </code></pre></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- /section -->
+    
+<section id="snippet-9" class="wrapper bg-light wrapper-border">
+  <div class="container pt-15 pt-md-17 pb-13 pb-md-15 text-center">
+    <div class="row">
+      <div class="col-lg-10 col-xl-8 col-xxl-7 mx-auto mb-8">
+        <h2 class="display-5 mb-3">My Selected Shots</h2>
+        <p class="lead fs-lg">Photography is my passion and I love to turn ideas into beautiful things.</p>
+      </div>
+    </div>
+
+    <div class="grid grid-view projects-masonry">
+      <div class="isotope-filter filter mb-10">
+        <ul>
+          
+          <li>
+            <a class="filter-item active" 
+               data-filter=".*">All</a>
+          </li>
+          
+          <li>
+            <a class="filter-item " 
+               data-filter=".foods">Foods</a>
+          </li>
+          
+          <li>
+            <a class="filter-item " 
+               data-filter=".drinks">Drinks</a>
+          </li>
+          
+          <li>
+            <a class="filter-item " 
+               data-filter=".events">Events</a>
+          </li>
+          
+          <li>
+            <a class="filter-item " 
+               data-filter=".pastries">Pastries</a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="row gx-md-6 gy-6 isotope">
+        
+        
+        <div class="project item col-md-6 col-xl-4 ">
+          <figure class="overlay overlay-1 rounded">
+            <a href="/assets/img/projects/research.png" 
+               data-glightbox 
+               data-gallery="shots-group">
+              <img src="/assets/img/projects/research.png" alt="Federated Learning for Multi-Institution Oncology Collaboration" />
+            </a>
+            <figcaption>
+              <h5 class="from-top mb-0">Federated Learning for Multi-Institution Oncology Collaboration</h5>
+            </figcaption>
+          </figure>
+        </div>
+        
+        <div class="project item col-md-6 col-xl-4 ">
+          <figure class="overlay overlay-1 rounded">
+            <a href="/assets/img/projects/Photo_CAL.jpg" 
+               data-glightbox 
+               data-gallery="shots-group">
+              <img src="/assets/img/projects/Photo_CAL.jpg" alt="CAL Fed-BioMed Experiment" />
+            </a>
+            <figcaption>
+              <h5 class="from-top mb-0">CAL Fed-BioMed Experiment</h5>
+            </figcaption>
+          </figure>
+        </div>
+        
+        <div class="project item col-md-6 col-xl-4 ">
+          <figure class="overlay overlay-1 rounded">
+            <a href="/assets/img/projects/CHB_team.jpg" 
+               data-glightbox 
+               data-gallery="shots-group">
+              <img src="/assets/img/projects/CHB_team.jpg" alt="Fed-BioMed at Hospital Centre Henri Becquerel of Rouen" />
+            </a>
+            <figcaption>
+              <h5 class="from-top mb-0">Fed-BioMed at Hospital Centre Henri Becquerel of Rouen</h5>
+            </figcaption>
+          </figure>
+        </div>
+        
+        <div class="project item col-md-6 col-xl-4 ">
+          <figure class="overlay overlay-1 rounded">
+            <a href="/assets/img/projects/antoine_lacassagne.png" 
+               data-glightbox 
+               data-gallery="shots-group">
+              <img src="/assets/img/projects/antoine_lacassagne.png" alt="Fed-BioMed for oncology research" />
+            </a>
+            <figcaption>
+              <h5 class="from-top mb-0">Fed-BioMed for oncology research</h5>
+            </figcaption>
+          </figure>
+        </div>
+        
+        <div class="project item col-md-6 col-xl-4 ">
+          <figure class="overlay overlay-1 rounded">
+            <a href="/assets/img/projects/CTimaging.png" 
+               data-glightbox 
+               data-gallery="shots-group">
+              <img src="/assets/img/projects/CTimaging.png" alt="Real-world Federated Learning for Cardiac CT Imaging" />
+            </a>
+            <figcaption>
+              <h5 class="from-top mb-0">Real-world Federated Learning for Cardiac CT Imaging</h5>
+            </figcaption>
+          </figure>
+        </div>
+        
+        <div class="project item col-md-6 col-xl-4 ">
+          <figure class="overlay overlay-1 rounded">
+            <a href="/assets/img/projects/usecase.png" 
+               data-glightbox 
+               data-gallery="shots-group">
+              <img src="/assets/img/projects/usecase.png" alt="Fed-BioMed for FEDERATED-LUNG project" />
+            </a>
+            <figcaption>
+              <h5 class="from-top mb-0">Fed-BioMed for FEDERATED-LUNG project</h5>
+            </figcaption>
+          </figure>
+        </div>
+        
+        <div class="project item col-md-6 col-xl-4 ">
+          <figure class="overlay overlay-1 rounded">
+            <a href="/assets/img/projects/usecase.png" 
+               data-glightbox 
+               data-gallery="shots-group">
+              <img src="/assets/img/projects/usecase.png" alt="Fed-BioMed for Federated-PET project" />
+            </a>
+            <figcaption>
+              <h5 class="from-top mb-0">Fed-BioMed for Federated-PET project</h5>
+            </figcaption>
+          </figure>
+        </div>
+        
+        <div class="project item col-md-6 col-xl-4 ">
+          <figure class="overlay overlay-1 rounded">
+            <a href="/assets/img/projects/DTRIP4H.avif" 
+               data-glightbox 
+               data-gallery="shots-group">
+              <img src="/assets/img/projects/DTRIP4H.avif" alt="DTRIP4H" />
+            </a>
+            <figcaption>
+              <h5 class="from-top mb-0">DTRIP4H</h5>
+            </figcaption>
+          </figure>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="container pb-15 pb-md-17">
+    <div class="card">
+      <div class="card-footer border-0 position-relative">
+        <a class="collapse-link collapsed" data-bs-toggle="collapse" href="#collapse-snippet-9-html">
+          View HTML code
+        </a>
+      </div>
+      <div id="collapse-snippet-9-html" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+            <button class="btn-clipboard" data-clipboard-target="#html9">Copy</button>
+            <div id="html9">
+              <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"wrapper bg-light wrapper-border"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container pt-15 pt-md-17 pb-13 pb-md-15 text-center"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"{{ page.portfolio9.layout.header_column }}"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"{{ page.portfolio9.content.title_classes }}"</span><span class="nt">&gt;</span>{{ page.portfolio9.content.title }}<span class="nt">&lt;/h2&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"{{ page.portfolio9.content.subtitle_classes }}"</span><span class="nt">&gt;</span>{{ page.portfolio9.content.subtitle }}<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"{{ page.portfolio9.layout.grid_classes }}"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"isotope-filter filter mb-10"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;ul&gt;</span>
+          {% for filter in page.portfolio9.filters %}
+          <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"filter-item {% if filter.active %}active{% endif %}"</span> 
+               <span class="na">data-filter=</span><span class="s">".{{ filter.class }}"</span><span class="nt">&gt;</span>{{ filter.name }}<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          {% endfor %}
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row {{ page.portfolio9.layout.row_classes }}"</span><span class="nt">&gt;</span>
+        {% assign photo_projects = site.use_cases | where: "category", "Photography" %}
+        {% for project in photo_projects %}
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"project item {{ page.portfolio9.project.column_classes }} {{ project.tags | join: ' ' }}"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"{{ page.portfolio9.project.figure_classes }}"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ project.hero_image }}"</span> 
+               <span class="na">data-glightbox</span> 
+               <span class="na">data-gallery=</span><span class="s">"{{ page.portfolio9.project.lightbox.gallery_name }}"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"{{ project.thumbnail }}"</span> <span class="na">alt=</span><span class="s">"{{ project.title }}"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;figcaption&gt;</span>
+              <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"{{ page.portfolio9.project.title_classes }}"</span><span class="nt">&gt;</span>{{ project.title }}<span class="nt">&lt;/h5&gt;</span>
+            <span class="nt">&lt;/figcaption&gt;</span>
+          <span class="nt">&lt;/figure&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        {% endfor %}
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+
+              </code></pre></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- YAML Configuration -->
+      <div class="card-footer border-0 position-relative">
+        <a class="collapse-link collapsed" data-bs-toggle="collapse" href="#collapse-snippet-9-yaml">
+          View YAML Configuration
+        </a>
+      </div>
+      <div id="collapse-snippet-9-yaml" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+            <button class="btn-clipboard" data-clipboard-target="#yaml9">Copy</button>
+            <div id="yaml9">
+              <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">portfolio9</span><span class="pi">:</span>
+  <span class="na">enable</span><span class="pi">:</span> <span class="kc">true</span>
+  <span class="na">content</span><span class="pi">:</span>
+    <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">My</span><span class="nv"> </span><span class="s">Selected</span><span class="nv"> </span><span class="s">Shots"</span>
+    <span class="na">title_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">display-5</span><span class="nv"> </span><span class="s">mb-3"</span>
+    <span class="na">subtitle</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Photography</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">my</span><span class="nv"> </span><span class="s">passion</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">love</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">turn</span><span class="nv"> </span><span class="s">ideas</span><span class="nv"> </span><span class="s">into</span><span class="nv"> </span><span class="s">beautiful</span><span class="nv"> </span><span class="s">things."</span>
+    <span class="na">subtitle_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">lead</span><span class="nv"> </span><span class="s">fs-lg"</span>
+  <span class="na">layout</span><span class="pi">:</span>
+    <span class="na">header_column</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-lg-10</span><span class="nv"> </span><span class="s">col-xl-8</span><span class="nv"> </span><span class="s">col-xxl-7</span><span class="nv"> </span><span class="s">mx-auto</span><span class="nv"> </span><span class="s">mb-8"</span>
+    <span class="na">grid_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">grid</span><span class="nv"> </span><span class="s">grid-view</span><span class="nv"> </span><span class="s">projects-masonry"</span>
+    <span class="na">row_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">gx-md-6</span><span class="nv"> </span><span class="s">gy-6</span><span class="nv"> </span><span class="s">isotope"</span>
+  <span class="na">filters</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">All"</span>
+      <span class="na">class</span><span class="pi">:</span> <span class="s2">"</span><span class="s">*"</span>
+      <span class="na">active</span><span class="pi">:</span> <span class="kc">true</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Foods"</span>
+      <span class="na">class</span><span class="pi">:</span> <span class="s2">"</span><span class="s">foods"</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Drinks"</span>
+      <span class="na">class</span><span class="pi">:</span> <span class="s2">"</span><span class="s">drinks"</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Events"</span>
+      <span class="na">class</span><span class="pi">:</span> <span class="s2">"</span><span class="s">events"</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Pastries"</span>
+      <span class="na">class</span><span class="pi">:</span> <span class="s2">"</span><span class="s">pastries"</span>
+  <span class="na">project</span><span class="pi">:</span>
+    <span class="na">column_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-md-6</span><span class="nv"> </span><span class="s">col-xl-4"</span>
+    <span class="na">figure_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">overlay</span><span class="nv"> </span><span class="s">overlay-1</span><span class="nv"> </span><span class="s">rounded"</span>
+    <span class="na">title_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">from-top</span><span class="nv"> </span><span class="s">mb-0"</span>
+    <span class="na">lightbox</span><span class="pi">:</span>
+      <span class="na">enabled</span><span class="pi">:</span> <span class="kc">true</span>
+      <span class="na">gallery_name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">shots-group"</span>
+              </code></pre></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- /section -->
+    
+<section id="snippet-10" class="wrapper bg-light wrapper-border">
+  <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
+    <div class="row text-center">
+      <div class="col-lg-10 col-xxl-8 mx-auto mb-12">
+        <h2 class="fs-16 text-uppercase text-muted mb-3">Latest Projects</h2>
+        <h3 class="display-2 ls-sm">Check out some of our <span class="underline-3 style-1 primary"><em>awesome</em></span> projects with creative ideas and great design.</h3>
+      </div>
+    </div>
+
+    
+    
+  </div>
+
+  <div class="container pb-15 pb-md-17">
+    <div class="card">
+      <div class="card-footer border-0 position-relative">
+        <a class="collapse-link collapsed" data-bs-toggle="collapse" href="#collapse-snippet-10-html">
+          View HTML code
+        </a>
+      </div>
+      <div id="collapse-snippet-10-html" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+            <button class="btn-clipboard" data-clipboard-target="#html10">Copy</button>
+            <div id="html10">
+              <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"wrapper bg-light wrapper-border"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container pt-15 pt-md-17 pb-13 pb-md-15"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row text-center"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"{{ page.portfolio10.layout.header_column }}"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"{{ page.portfolio10.content.subtitle_classes }}"</span><span class="nt">&gt;</span>{{ page.portfolio10.content.subtitle }}<span class="nt">&lt;/h2&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"{{ page.portfolio10.content.title_classes }}"</span><span class="nt">&gt;</span>{{ page.portfolio10.content.title }}<span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    {% assign featured_projects = site.use_cases | where: "featured", true | limit: 2 %}
+    {% for project in featured_projects %}
+    {% assign config = page.portfolio10.featured_projects[forloop.index0] %}
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row gy-10 align-items-center {% unless forloop.last %}mb-15 mb-md-17{% endunless %}"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"{{ config.column_image }}"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card {{ config.card_classes }}"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body {{ config.card_body_classes }}"</span><span class="nt">&gt;</span>
+            {% if forloop.first %}
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row gx-4 gx-md-9"</span><span class="nt">&gt;</span>
+              {% for image in project.gallery | limit: 2 %}
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"{{ config.images[forloop.index0].column_classes }}"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;figure</span> <span class="err">{%</span> <span class="na">if</span> <span class="na">forloop.first</span> <span class="err">%}</span><span class="na">class=</span><span class="s">"mt-9"</span><span class="err">{%</span> <span class="na">endif</span> <span class="err">%}</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ project.url }}"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"{{ config.images[forloop.index0].classes }}"</span> 
+                         <span class="na">src=</span><span class="s">"{{ image.url }}"</span> 
+                         <span class="na">srcset=</span><span class="s">"{{ image.url | replace: '.webp', '@2x.webp' }} 2x"</span> 
+                         <span class="na">alt=</span><span class="s">"{{ image.alt }}"</span> <span class="nt">/&gt;</span>
+                  <span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/figure&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+              {% endfor %}
+            <span class="nt">&lt;/div&gt;</span>
+            {% else %}
+            <span class="nt">&lt;figure&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ project.url }}"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"{{ project.hero_image }}"</span> 
+                     <span class="na">srcset=</span><span class="s">"{{ project.hero_image | replace: '.webp', '@2x.webp' }} 2x"</span> 
+                     <span class="na">alt=</span><span class="s">"{{ project.title }}"</span> <span class="nt">/&gt;</span>
+              <span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/figure&gt;</span>
+            {% endif %}
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"{{ config.column_content }}"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"h1 post-title ls-sm mb-2"</span><span class="nt">&gt;</span>{{ project.title }}<span class="nt">&lt;/h3&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-category text-muted mb-4"</span><span class="nt">&gt;</span>
+          {% assign categories = project.category | split: "," %}
+          {% for category in categories %}
+          <span class="nt">&lt;span&gt;</span>{{ category | strip }}<span class="nt">&lt;/span&gt;</span>{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-6"</span><span class="nt">&gt;</span>{{ project.description }}<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ project.url }}"</span> <span class="na">class=</span><span class="s">"{{ config.button.classes }}"</span><span class="nt">&gt;</span>{{ config.button.text }}<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    {% endfor %}
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+
+              </code></pre></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- YAML Configuration -->
+      <div class="card-footer border-0 position-relative">
+        <a class="collapse-link collapsed" data-bs-toggle="collapse" href="#collapse-snippet-10-yaml">
+          View YAML Configuration
+        </a>
+      </div>
+      <div id="collapse-snippet-10-yaml" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+            <button class="btn-clipboard" data-clipboard-target="#yaml10">Copy</button>
+            <div id="yaml10">
+              <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">portfolio10</span><span class="pi">:</span>
+  <span class="na">enable</span><span class="pi">:</span> <span class="kc">true</span>
+  <span class="na">content</span><span class="pi">:</span>
+    <span class="na">subtitle</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Latest</span><span class="nv"> </span><span class="s">Projects"</span>
+    <span class="na">subtitle_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fs-16</span><span class="nv"> </span><span class="s">text-uppercase</span><span class="nv"> </span><span class="s">text-muted</span><span class="nv"> </span><span class="s">mb-3"</span>
+    <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Check</span><span class="nv"> </span><span class="s">out</span><span class="nv"> </span><span class="s">some</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">our</span><span class="nv"> </span><span class="s">&lt;span</span><span class="nv"> </span><span class="s">class=</span><span class="se">\"</span><span class="s">underline-3</span><span class="nv"> </span><span class="s">style-1</span><span class="nv"> </span><span class="s">primary</span><span class="se">\"</span><span class="s">&gt;&lt;em&gt;awesome&lt;/em&gt;&lt;/span&gt;</span><span class="nv"> </span><span class="s">projects</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">creative</span><span class="nv"> </span><span class="s">ideas</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">great</span><span class="nv"> </span><span class="s">design."</span>
+    <span class="na">title_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">display-2</span><span class="nv"> </span><span class="s">ls-sm"</span>
+  <span class="na">layout</span><span class="pi">:</span>
+    <span class="na">header_column</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-lg-10</span><span class="nv"> </span><span class="s">col-xxl-8</span><span class="nv"> </span><span class="s">mx-auto</span><span class="nv"> </span><span class="s">mb-12"</span>
+  <span class="na">featured_projects</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">layout</span><span class="pi">:</span> <span class="s2">"</span><span class="s">image-left"</span>
+      <span class="na">column_content</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-lg-4</span><span class="nv"> </span><span class="s">ms-auto"</span>
+      <span class="na">column_image</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-lg-7"</span>
+      <span class="na">card_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">bg-soft-grape"</span>
+      <span class="na">card_body_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">px-9</span><span class="nv"> </span><span class="s">py-0</span><span class="nv"> </span><span class="s">overflow-hidden"</span>
+      <span class="na">button</span><span class="pi">:</span>
+        <span class="na">text</span><span class="pi">:</span> <span class="s2">"</span><span class="s">See</span><span class="nv"> </span><span class="s">Project"</span>
+        <span class="na">classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">btn</span><span class="nv"> </span><span class="s">btn-grape</span><span class="nv"> </span><span class="s">rounded"</span>
+      <span class="na">images</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="na">classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">shadow-lg</span><span class="nv"> </span><span class="s">rounded-top</span><span class="nv"> </span><span class="s">mt-9"</span>
+          <span class="na">column_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-6"</span>
+        <span class="pi">-</span> <span class="na">classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">shadow-lg</span><span class="nv"> </span><span class="s">rounded-bottom"</span>
+          <span class="na">column_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-6"</span>
+    <span class="pi">-</span> <span class="na">layout</span><span class="pi">:</span> <span class="s2">"</span><span class="s">image-right"</span>
+      <span class="na">column_content</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-lg-4</span><span class="nv"> </span><span class="s">me-auto"</span>
+      <span class="na">column_image</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-lg-7</span><span class="nv"> </span><span class="s">order-lg-2"</span>
+      <span class="na">card_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">bg-soft-primary"</span>
+      <span class="na">card_body_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">p-11</span><span class="nv"> </span><span class="s">overflow-hidden"</span>
+      <span class="na">button</span><span class="pi">:</span>
+        <span class="na">text</span><span class="pi">:</span> <span class="s2">"</span><span class="s">See</span><span class="nv"> </span><span class="s">Project"</span>
+        <span class="na">classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">btn</span><span class="nv"> </span><span class="s">btn-primary</span><span class="nv"> </span><span class="s">rounded"</span>
+              </code></pre></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- /section -->
+    
+<section id="snippet-11" class="wrapper bg-light wrapper-border">
+  <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
+    <div class="row mb-10">
+      <div class="col-md-9 col-lg-7 col-xl-6 col-xxl-5 mx-auto">
+        <div class="counter-wrapper">
+          <h3 class="fs-70 mb-3 text-primary text-center counter">21</h3>
+        </div>
+        <h2 class="display-3 mb-3 text-center mb-0">Functional, impressive and rich demos to start with</h2>
+      </div>
+    </div>
+
+    <div class="demos-wrapper">
+      
+      
+      <div class="text-center mt-12">
+        <a href="#" class="btn btn-primary rounded-pill">
+          See All Demos
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pb-15 pb-md-17">
+    <div class="card">
+      <div class="card-footer border-0 position-relative">
+        <a class="collapse-link collapsed" data-bs-toggle="collapse" href="#collapse-snippet-11-html">
+          View HTML code
+        </a>
+      </div>
+      <div id="collapse-snippet-11-html" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+            <button class="btn-clipboard" data-clipboard-target="#html11">Copy</button>
+            <div id="html11">
+              <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"wrapper bg-light wrapper-border"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container pt-15 pt-md-17 pb-13 pb-md-15"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mb-10"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"{{ page.portfolio11.layout.header_column }}"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"counter-wrapper"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"{{ page.portfolio11.content.counter.classes }}"</span><span class="nt">&gt;</span>{{ page.portfolio11.content.counter.number }}<span class="nt">&lt;/h3&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"{{ page.portfolio11.content.title_classes }}"</span><span class="nt">&gt;</span>{{ page.portfolio11.content.title }}<span class="nt">&lt;/h2&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"demos-wrapper"</span><span class="nt">&gt;</span>
+      {% assign demo_projects = site.use_cases | where: "category", "Demo"  %}
+      {% for project in demo_projects | limit: 2 %}
+      {% assign config = page.portfolio11.demos[forloop.index0] %}
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"project {% unless forloop.last %}mb-10{% endunless %}"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card {{ config.card_classes }}"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body {{ config.card_body_classes }}"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row gx-md-8 gx-xl-12 d-flex align-items-center"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"{{ config.image_column }}"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row gx-7"</span><span class="nt">&gt;</span>
+                  {% for image in project.gallery_images limit:2 %}
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"itooltip itooltip-{{ config.color }} {% if forloop.first %}mt-9{% endif %}"</span> 
+                            <span class="na">title=</span><span class="s">'&lt;h5 class="mb-0"&gt;Click to see the demo&lt;/h5&gt;'</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ project.url }}"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"shadow-lg {% if forloop.first %}rounded-top{% else %}rounded-bottom{% endif %}"</span> 
+                             <span class="na">src=</span><span class="s">"{{ image.url }}"</span> 
+                             <span class="na">srcset=</span><span class="s">"{{ image.url | replace: '.webp', '@2x.webp' }} 2x"</span> 
+                             <span class="na">alt=</span><span class="s">"{{ image.alt }}"</span> <span class="nt">/&gt;</span>
+                      <span class="nt">&lt;/a&gt;</span>
+                    <span class="nt">&lt;/figure&gt;</span>
+                  <span class="nt">&lt;/div&gt;</span>
+                  {% endfor %}
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"{{ config.content_column }}"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"{{ config.title_classes }}"</span><span class="nt">&gt;</span>{{ project.title }}<span class="nt">&lt;/h2&gt;</span>
+                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"{{ config.list_classes }}"</span><span class="nt">&gt;</span>
+                  {% for feature in project.features %}
+                  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"col-md-6"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span&gt;&lt;i</span> <span class="na">class=</span><span class="s">"uil uil-check"</span><span class="nt">&gt;&lt;/i&gt;&lt;/span&gt;</span>
+                    <span class="nt">&lt;span&gt;</span>{{ feature }}<span class="nt">&lt;/span&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                  {% endfor %}
+                <span class="nt">&lt;/ul&gt;</span>
+                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ project.url }}"</span> <span class="na">target=</span><span class="s">"_blank"</span> <span class="na">class=</span><span class="s">"{{ config.button_classes }}"</span><span class="nt">&gt;</span>See Demo<span class="nt">&lt;/a&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      {% endfor %}
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-center mt-12"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"{{ page.portfolio11.footer.button.classes }}"</span><span class="nt">&gt;</span>
+          {{ page.portfolio11.footer.button.text }}
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+
+              </code></pre></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- YAML Configuration -->
+      <div class="card-footer border-0 position-relative">
+        <a class="collapse-link collapsed" data-bs-toggle="collapse" href="#collapse-snippet-11-yaml">
+          View YAML Configuration
+        </a>
+      </div>
+      <div id="collapse-snippet-11-yaml" class="card-footer bg-dark p-0 accordion-collapse collapse">
+        <div class="code-wrapper">
+          <div class="code-wrapper-inner">
+            <button class="btn-clipboard" data-clipboard-target="#yaml11">Copy</button>
+            <div id="yaml11">
+              <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">portfolio11</span><span class="pi">:</span>
+  <span class="na">enable</span><span class="pi">:</span> <span class="kc">true</span>
+  <span class="na">content</span><span class="pi">:</span>
+    <span class="na">counter</span><span class="pi">:</span> 
+      <span class="na">number</span><span class="pi">:</span> <span class="s2">"</span><span class="s">21"</span>
+      <span class="na">classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fs-70</span><span class="nv"> </span><span class="s">mb-3</span><span class="nv"> </span><span class="s">text-primary</span><span class="nv"> </span><span class="s">text-center</span><span class="nv"> </span><span class="s">counter"</span>
+    <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Functional,</span><span class="nv"> </span><span class="s">impressive</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">rich</span><span class="nv"> </span><span class="s">demos</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">start</span><span class="nv"> </span><span class="s">with"</span>
+    <span class="na">title_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">display-3</span><span class="nv"> </span><span class="s">mb-3</span><span class="nv"> </span><span class="s">text-center</span><span class="nv"> </span><span class="s">mb-0"</span>
+  <span class="na">layout</span><span class="pi">:</span>
+    <span class="na">header_column</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-md-9</span><span class="nv"> </span><span class="s">col-lg-7</span><span class="nv"> </span><span class="s">col-xl-6</span><span class="nv"> </span><span class="s">col-xxl-5</span><span class="nv"> </span><span class="s">mx-auto"</span>
+  <span class="na">demos</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">color</span><span class="pi">:</span> <span class="s2">"</span><span class="s">grape"</span>
+      <span class="na">card_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">bg-soft-grape"</span>
+      <span class="na">card_body_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">ps-xl-12</span><span class="nv"> </span><span class="s">py-0</span><span class="nv"> </span><span class="s">overflow-hidden"</span>
+      <span class="na">image_column</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-lg-7"</span>
+      <span class="na">content_column</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-lg-5</span><span class="nv"> </span><span class="s">d-none</span><span class="nv"> </span><span class="s">d-lg-block"</span>
+      <span class="na">title_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">post-title</span><span class="nv"> </span><span class="s">fs-30</span><span class="nv"> </span><span class="s">mb-4"</span>
+      <span class="na">list_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">icon-list</span><span class="nv"> </span><span class="s">bullet-grape</span><span class="nv"> </span><span class="s">row</span><span class="nv"> </span><span class="s">ms-0</span><span class="nv"> </span><span class="s">gy-2"</span>
+      <span class="na">button_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">btn</span><span class="nv"> </span><span class="s">btn-sm</span><span class="nv"> </span><span class="s">btn-grape</span><span class="nv"> </span><span class="s">rounded-pill</span><span class="nv"> </span><span class="s">mt-1"</span>
+    <span class="pi">-</span> <span class="na">color</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fuchsia"</span>
+      <span class="na">card_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">bg-soft-fuchsia"</span>
+      <span class="na">card_body_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">ps-xl-12</span><span class="nv"> </span><span class="s">py-0</span><span class="nv"> </span><span class="s">overflow-hidden"</span>
+      <span class="na">image_column</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-lg-7"</span>
+      <span class="na">content_column</span><span class="pi">:</span> <span class="s2">"</span><span class="s">col-lg-5</span><span class="nv"> </span><span class="s">d-none</span><span class="nv"> </span><span class="s">d-lg-block"</span>
+      <span class="na">title_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">post-title</span><span class="nv"> </span><span class="s">fs-30</span><span class="nv"> </span><span class="s">mb-4"</span>
+      <span class="na">list_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">icon-list</span><span class="nv"> </span><span class="s">bullet-fuchsia</span><span class="nv"> </span><span class="s">row</span><span class="nv"> </span><span class="s">ms-0</span><span class="nv"> </span><span class="s">gy-2"</span>
+      <span class="na">button_classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">btn</span><span class="nv"> </span><span class="s">btn-sm</span><span class="nv"> </span><span class="s">btn-fuchsia</span><span class="nv"> </span><span class="s">rounded-pill</span><span class="nv"> </span><span class="s">mt-1"</span>
+  <span class="na">footer</span><span class="pi">:</span>
+    <span class="na">button</span><span class="pi">:</span>
+      <span class="na">text</span><span class="pi">:</span> <span class="s2">"</span><span class="s">See</span><span class="nv"> </span><span class="s">All</span><span class="nv"> </span><span class="s">Demos"</span>
+      <span class="na">classes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">btn</span><span class="nv"> </span><span class="s">btn-primary</span><span class="nv"> </span><span class="s">rounded-pill"</span>
+              </code></pre></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+        
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="bg-gradient-reverse-primary ">
+  
+  
+  
+  
+  
+  
+
+    <div class="bg-white shadow-lg" aria-label="newsletter-title">
+  <div class="container  py-10">
+    <div class="row align-items-center justify-content-between">
+        <div class="col-lg-5 mb-4 mb-lg-0 text-center text-lg-start">
+            <h2 id="newsletter-title" class="display-2 mb-3 text-fedbiomed-primary">
+            Stay <span class="text-fedbiomed-tertiary">updated</span>
+            </h2>
+            <p class="mb-0 text-fedbiomed-primary fw-lighter">
+            Get the latest Fed-BioMed updates to your inbox
+            </p>
+        </div>
+
+        <div class="col-lg-4">
+            <form action="https://sympa.inria.fr/sympa/subscribe/fedbiomed-support" method="get" target="_blank" class="position-relative">
+            <label for="newsletter-email" class="visually-hidden">Email address</label>
+              <input
+                id="newsletter-email"
+                type="email"
+                name="email"
+                class="form-control rounded-pill pe-5 bg-soft-blue text-fedbiomed-primary border-0"
+                placeholder="Enter your email"
+                required>
+            <button
+                type="submit"
+                class="btn border-0 bg-transparent shadow-none position-absolute top-50 end-0 translate-middle-y pe-3 text-primary"
+                aria-label="Subscribe to newsletter">
+                ➤
+            </button>
+            </form>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="container py-10 py-md-12">
+  <div class="row gy-8 align-items-stretch">
+
+    <!-- LOGO / BRAND -->
+    <div class="col-12 col-lg-4 order-1 order-lg-2 text-center d-flex">
+        <div class="d-flex flex-column align-items-center justify-content-center w-100">
+        
+          <img
+            src="/test-fbm-site/assets/img/logo_icon.png"
+            alt="Fed-BioMed"
+            class="mb-4"
+            style="max-width: 130px; height: auto;">
+        
+
+        <h3 class="mb-1 text-fedbiomed-primary">
+          Fed-BioMed
+        </h3>
+
+        <p class="mb-0 text-fedbiomed-primary fw-lighter">
+          Copyright ©2026
+        </p>
+      </div>
+    </div>
+
+    <!-- LEFT LINKS -->
+    <div class="col-12 col-md-6 col-lg-4 order-2 order-lg-1">
+      <div class="row gy-6 text-center text-md-start">
+        <div class="col-12">
+          <h4 class="mb-3 text-fedbiomed-primary">
+            Helpful links
+          </h4>
+          <div class="row row-cols-1 row-cols-sm-2 gy-2 text-fedbiomed-secondary fw-lighter">
+            
+              <div class="col">
+                <a href="/test-fbm-site/software#what-is-fedbiomed" class=" hover">Fed-BioMed</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/federated_learning" class=" hover">Federated Learning</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/federated_network/#architecture" class=" hover">Architecture</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/federated_network/#workflow" class=" hover">Workflow</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/federated_learning/#security-in-practice" class=" hover">Security in Practice</a>
+              </div>
+            
+              <div class="col">
+                <a href="/test-fbm-site/use_cases/" class=" hover">Use Cases</a>
+              </div>
+            
+          </div>
+        </div>
+
+        <div class="col-12 pt-8">
+          <h4 class="mb-3 text-fedbiomed-primary">
+            Documentation
+          </h4>
+          <div class="row row-cols-1 row-cols-sm-2 gy-2 text-fedbiomed-secondary fw-lighter">
+            
+              <div class="col">
+                <a href="https://docs.fedbiomed.org/latest/getting-started/what-is-fedbiomed/" class=" hover">Get Started</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://docs.fedbiomed.org/latest/getting-started/installation/" class=" hover">Installation</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://docs.fedbiomed.org/latest/tutorials/pytorch/01_PyTorch_MNIST_Single_Node_Tutorial/" class=" hover">Tutorials</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://docs.fedbiomed.org/latest/user-guide/glossary/" class=" hover">User Guide</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://docs.fedbiomed.org/latest/developer/usage_and_tools/" class=" hover">Developer</a>
+              </div>
+            
+              <div class="col">
+                <a href="https://docs.fedbiomed.org/latest/getting-started/basic-example/" class=" hover">Examples</a>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT LINKS + SOCIAL + ADDRESS -->
+    <div class="col-12 col-md-6 col-lg-4 order-3 order-lg-3">
+      <div class="row gy-6 text-center text-md-start text-lg-end h-100">
+        <div class="col-12">
+          <h4 class="mb-3 text-fedbiomed-primary">
+            About
+          </h4>
+          <div class="row row-cols-1 row-cols-sm-2 gy-2 text-fedbiomed-secondary fw-lighter">
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#funding" class=" hover">Funding & Institutional Support</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#roadmap" class=" hover">Roadmap</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/faq/" class=" hover">FAQ</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#contacts" class=" hover">Support & Contacts</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#how-to-cite-us" class=" hover">How to cite</a>
+              </div>
+            
+              <div class="col text-center text-md-start text-lg-end">
+                <a href="/test-fbm-site/about#team" class=" hover">Team</a>
+              </div>
+            
+          </div>
+        </div>
+
+        <div class="col-12 pt-8 mt-lg-auto text-fedbiomed-primary">
+          <nav class="nav social justify-content-center justify-content-md-start justify-content-lg-end mb-4" aria-label="Social media">
+            
+              <a
+                href="https://github.com/fedbiomed/fedbiomed"
+                class="ms-2"
+                style="font-size: 1.35rem;"
+                aria-label="GitHub"
+                target="_blank" rel="noopener noreferrer">
+                <i class="uil uil-github text-fedbiomed-primary" aria-hidden="true"></i>
+              </a>
+            
+              <a
+                href="https://www.linkedin.com/groups/12606640/"
+                class="ms-2"
+                style="font-size: 1.35rem;"
+                aria-label="LinkedIn"
+                target="_blank" rel="noopener noreferrer">
+                <i class="uil uil-linkedin text-fedbiomed-primary" aria-hidden="true"></i>
+              </a>
+            
+              <a
+                href="mailto:fedbiomed@inria.fr"
+                class="ms-2"
+                style="font-size: 1.35rem;"
+                aria-label="Email"
+                >
+                <i class="uil uil-envelope text-fedbiomed-primary" aria-hidden="true"></i>
+              </a>
+            
+          </nav>
+
+          <address class="mb-0 text-center text-md-start text-lg-end">
+            2004 Rte des Lucioles, 06902 Sophia Antipolis, France
+          </address>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+  
+  <!-- /.container -->
+</footer>
+
+  <!-- Modals -->
+  
+
+  
+
+  <!-- Scroll To Top Button -->
+  
+  <!-- Site Scripts-->
+  <script src="/test-fbm-site/assets/js/bootstrap.bundle.js"></script>
+<script src="/test-fbm-site/assets/js/plugins.js"></script>
+<script src="/test-fbm-site/assets/js/theme.js"></script>
+
+  <script>
+    (function () {
+      const NAVBAR_H = 90;
+      const KNOWN_TYPES = { note: 'ℹ', info: 'ℹ', tip: '✓', warning: '⚠', danger: '✕' };
+
+      // ── Admonitions ──────────────────────────────────────────
+      const content = document.querySelector('.col-xl-8 .content');
+      if (content) {
+        content.querySelectorAll('p, li').forEach(el => {
+          const text = el.textContent;
+          const m = text.match(/^!!!\s+(\w+)\s+"([^"]+)"\s*([\s\S]*)$/);
+          if (!m) return;
+          const type = KNOWN_TYPES[m[1]] ? m[1] : 'note';
+          const div = document.createElement('div');
+          div.className = 'doc-admonition doc-admonition--' + type;
+          const body = m[3].trim();
+          div.innerHTML =
+            '<span class="doc-admonition__icon">' + KNOWN_TYPES[type] + '</span>' +
+            '<span class="doc-admonition__title">' + m[2] + '</span>' +
+            (body ? '<div class="doc-admonition__body">' + body + '</div>' : '');
+          el.replaceWith(div);
+        });
+      }
+
+      // ── TOC scrollspy ─────────────────────────────────────────
+      const nav = document.getElementById('sidebar-nav');
+      if (!nav) return;
+
+      const headings = Array.from(
+        document.querySelectorAll('.col-xl-8 .content h2[id], .col-xl-8 .content h3[id]')
+      );
+      if (!headings.length) return;
+
+      let currentLink = null;
+      function setActive(id) {
+        const next = nav.querySelector('a[href="#' + id + '"]');
+        if (next === currentLink) return;
+        if (currentLink) currentLink.classList.remove('active');
+        if (next) next.classList.add('active');
+        currentLink = next;
+      }
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => { if (entry.isIntersecting) setActive(entry.target.id); });
+      }, { rootMargin: '0px 0px -80% 0px', threshold: 0 });
+
+      headings.forEach(h => observer.observe(h));
+
+      nav.addEventListener('click', e => {
+        const link = e.target.closest('a[href^="#"]');
+        if (!link) return;
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        const target = document.getElementById(link.getAttribute('href').slice(1));
+        if (!target) return;
+        window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - NAVBAR_H, behavior: 'smooth' });
+      });
+    })();
+  </script>
+  <!-- MathJax for LaTeX rendering -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+</body>
+</html>
