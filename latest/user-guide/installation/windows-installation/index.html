@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting – Fed-BioMed</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(159.23deg, rgba(144, 224, 239, 0.05) 2.6%, rgba(0, 119, 182, 0.05) 46.5%);
+            font-family: 'Nunito Sans', sans-serif;
+        }
+
+        .card {
+            text-align: center;
+            padding: 3rem 4rem;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 40px rgba(0, 0, 0, 0.08);
+            max-width: 440px;
+            width: 90%;
+            animation: fadeUp 0.6s ease both;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .logo { width: 120px; margin-bottom: 2rem; }
+        h1 { font-size: 1.25rem; font-weight: 600; color: #03045e; margin-bottom: 0.5rem; }
+        p  { font-size: 0.95rem; color: #343f52; margin-bottom: 2rem; line-height: 1.6; }
+
+        .destination {
+            display: inline-block;
+            font-size: 0.85rem;
+            color: #0077b6;
+            background: rgba(144, 224, 239, 0.2);
+            padding: 0.4rem 1rem;
+            border-radius: 999px;
+            margin-bottom: 2rem;
+            word-break: break-all;
+            font-weight: 500;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 28px; height: 28px;
+            border: 3px solid rgba(144, 224, 239, 0.4);
+            border-top-color: #00b4d8;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .manual-link { display: block; margin-top: 1.5rem; font-size: 0.82rem; color: #9499a3; }
+        .manual-link a { color: #00b4d8; text-decoration: none; font-weight: 500; }
+        .manual-link a:hover { color: #0077b6; text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img class="logo" src="/assets/img/logo_icon.png" alt="Fed-BioMed" onerror="this.style.display='none'">
+        <h1>Redirecting to the new website</h1>
+        <p>The Fed-BioMed documentation has moved to a new dedicated site.</p>
+        <div class="destination" id="dest-url">docs.fedbiomed.org</div>
+        <br>
+        <div class="spinner"></div>
+        <span class="manual-link">Not redirected? <a id="manual-link" href="https://docs.fedbiomed.org">Click here</a></span>
+    </div>
+
+    <script>
+        (function () {
+            var path = window.location.pathname;
+            var newUrl = null;
+
+            // Only redirect /latest/... paths
+            if (path.match(/^\/latest\//)) {
+                newUrl = 'https://docs.fedbiomed.org' + path;
+            }
+
+            if (newUrl) {
+                document.getElementById('dest-url').textContent = newUrl.replace('https://', '');
+                document.getElementById('manual-link').href = newUrl;
+                setTimeout(function () { window.location.replace(newUrl); }, 1500);
+            }
+        })();
+    </script>
+</body>
+</html>
