@@ -128,29 +128,41 @@
     </div>
 
     <script>
-        (function () {
-            var path = window.location.pathname;
-            var newUrl = null;
+(function () {
+    var path = window.location.pathname;
+    var newUrl = null;
 
-            var latestMatch = path.match(/^\/latest\//);
-            var versionMatch = path.match(/^\/(v\d+\.\d+\.\d+)\//);
+    // Match /public-website/latest/...
+    var latestMatch = path.match(/^\/public-website\/latest\//);
 
-            if (latestMatch) {
-                newUrl = 'https://docs.fedbiomed.org' + path;
-            } else if (versionMatch) {
-                var version = versionMatch[1].slice(1);
-                var newPath = path.replace(/^\/v\d+\.\d+\.\d+\//, '/' + version + '/');
-                newUrl = 'https://docs.fedbiomed.org' + newPath;
-            }
+    // Match /public-website/vX.Y.Z/...
+    var versionMatch = path.match(/^\/public-website\/(v\d+\.\d+\.\d+)\//);
 
-            if (newUrl) {
-                document.getElementById('dest-url').textContent = newUrl.replace('https://', '');
-                document.getElementById('manual-link').href = newUrl;
-                setTimeout(function () {
-                    window.location.replace(newUrl);
-                }, 1500);
-            }
-        })();
+    if (latestMatch) {
+        var newPath = path.replace(/^\/public-website\/latest/, '');
+        newUrl = 'https://docs.fedbiomed.org/latest' + newPath;
+    } else if (versionMatch) {
+        var version = versionMatch[1].slice(1);
+
+        var newPath = path.replace(
+            /^\/public-website\/v\d+\.\d+\.\d+/,
+            '/' + version
+        );
+
+        newUrl = 'https://docs.fedbiomed.org' + newPath;
+    }
+
+    if (newUrl) {
+        document.getElementById('dest-url').textContent =
+            newUrl.replace('https://', '');
+
+        document.getElementById('manual-link').href = newUrl;
+
+        setTimeout(function () {
+            window.location.replace(newUrl);
+        }, 1500);
+    }
+})();
     </script>
 </body>
 
