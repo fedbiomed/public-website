@@ -164,6 +164,105 @@
         
         
         
+          <li class="nav-item d-none d-md-block ms-2">
+            <div class="gh-repo-card">
+  <a href="https://github.com/fedbiomed/fedbiomed"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="gh-repo-card__top"
+     aria-label="fedbiomed on GitHub">
+    <i class="uil uil-github gh-repo-card__icon"></i>
+    <span class="gh-repo-card__name">fedbiomed</span>
+  </a>
+  <span class="gh-repo-card__divider"></span>
+  <span class="gh-repo-card__bottom">
+    <a href="https://github.com/fedbiomed/fedbiomed/stargazers"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="gh-repo-card__stat"
+       aria-label="Stargazers">
+      <i class="uil uil-star"></i>
+      <span class="gh-stars">—</span>
+    </a>
+    <a href="https://github.com/fedbiomed/fedbiomed/network/members"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="gh-repo-card__stat"
+       aria-label="Forks">
+      <i class="uil uil-code-branch"></i>
+      <span class="gh-forks">—</span>
+    </a>
+  </span>
+</div>
+<style>
+.gh-repo-card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  padding: 3px 8px;
+  border-radius: 10px;
+  color: #03045e;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  line-height: 1;
+}
+.gh-repo-card__top {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: inherit;
+  text-decoration: none !important;
+  transition: opacity .15s;
+}
+.gh-repo-card__top:hover { opacity: .65; color: inherit; }
+.gh-repo-card__icon { font-size: 15px; }
+.gh-repo-card__name { opacity: .75; letter-spacing: .01em; }
+.gh-repo-card__divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 180, 216, .25);
+}
+.gh-repo-card__bottom {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.gh-repo-card__stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: inherit;
+  text-decoration: none !important;
+  transition: opacity .15s;
+}
+.gh-repo-card__stat:hover { opacity: .65; color: inherit; }
+.gh-repo-card__stat i { font-size: 12px; opacity: .65; }
+</style>
+<script>
+(function () {
+  if (window.__ghRepoCardLoaded) return;
+  window.__ghRepoCardLoaded = true;
+
+  function fmt(n) { return n >= 1000 ? (n / 1000).toFixed(1) + 'k' : String(n); }
+
+  function applyStats(stars, forks) {
+    document.querySelectorAll('.gh-stars').forEach(function(el) { el.textContent = stars; });
+    document.querySelectorAll('.gh-forks').forEach(function(el) { el.textContent = forks; });
+  }
+
+  fetch('https://api.github.com/repos/fedbiomed/fedbiomed')
+    .then(function(r) { return r.json(); })
+    .then(function(d) {
+      if (typeof d.stargazers_count !== 'number') return;
+      applyStats(fmt(d.stargazers_count), fmt(d.forks_count));
+    })
+    .catch(function(e) { console.warn('[gh-repo-card] fetch failed:', e); });
+}());
+</script>
+
+          </li>
           <li class="nav-item d-none d-md-block">
             <a href="https://docs.fedbiomed.org/"
               class="btn btn-primary btn-gradient bg-gradient-dark-button border-0 rounded-xl"
@@ -403,7 +502,7 @@
             </figure>
             <div class="card-body px-6 py-5">
               <h4 class="mb-1">Alex ARGESE</h4>
-              <p class="mb-0">Website Developer</p>
+              <p class="mb-0">Software Developer</p>
             </div>
             <!--/.card-body -->
           </div>
@@ -709,7 +808,7 @@
                     <img class="rounded-circle w-15 mb-4" src="/assets/img/team/alex.png"
                       srcset="/assets/img/team/alex.png 2x" alt="Alex ARGESE" />
                     <h4 class="mb-1">Alex ARGESE</h4>
-                    <div class="meta mb-2">Website Developer</div>
+                    <div class="meta mb-2">Software Developer</div>
                     <p class="mb-2">Digital Media Engineer and Data Science Engineer with research experience at the intersection of AI, digital media production and HCI.</p>
                     <nav class="nav social mb-0">
                       
@@ -984,7 +1083,7 @@
                 <img class="rounded-circle w-20 mx-auto mb-4" src=""
                   srcset=" 2x" alt="Alex ARGESE" />
                 <h4 class="mb-1">Alex ARGESE</h4>
-                <div class="meta mb-2">Website Developer</div>
+                <div class="meta mb-2">Software Developer</div>
                 <p class="mb-2">Digital Media Engineer and Data Science Engineer with research experience at the intersection of AI, digital media production and HCI.</p>
                 <nav class="nav social justify-content-center text-center mb-0">
                   
@@ -1143,7 +1242,7 @@
               <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"swiper-slide"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"rounded-circle w-20 mx-auto mb-4"</span> <span class="na">src=</span><span class="s">""</span> <span class="na">srcset=</span><span class="s">" 2x"</span> <span class="na">alt=</span><span class="s">"Alex ARGESE"</span> <span class="nt">/&gt;</span>
                 <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"mb-1"</span><span class="nt">&gt;</span>Alex ARGESE<span class="nt">&lt;/h4&gt;</span>
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"meta mb-2"</span><span class="nt">&gt;</span>Website Developer<span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"meta mb-2"</span><span class="nt">&gt;</span>Software Developer<span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-2"</span><span class="nt">&gt;</span>Digital Media Engineer and Data Science Engineer with research experience at the intersection of AI, digital media production and HCI.<span class="nt">&lt;/p&gt;</span>
                 <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"nav social justify-content-center text-center mb-0"</span><span class="nt">&gt;</span>
                   

@@ -164,6 +164,105 @@
         
         
         
+          <li class="nav-item d-none d-md-block ms-2">
+            <div class="gh-repo-card">
+  <a href="https://github.com/fedbiomed/fedbiomed"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="gh-repo-card__top"
+     aria-label="fedbiomed on GitHub">
+    <i class="uil uil-github gh-repo-card__icon"></i>
+    <span class="gh-repo-card__name">fedbiomed</span>
+  </a>
+  <span class="gh-repo-card__divider"></span>
+  <span class="gh-repo-card__bottom">
+    <a href="https://github.com/fedbiomed/fedbiomed/stargazers"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="gh-repo-card__stat"
+       aria-label="Stargazers">
+      <i class="uil uil-star"></i>
+      <span class="gh-stars">—</span>
+    </a>
+    <a href="https://github.com/fedbiomed/fedbiomed/network/members"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="gh-repo-card__stat"
+       aria-label="Forks">
+      <i class="uil uil-code-branch"></i>
+      <span class="gh-forks">—</span>
+    </a>
+  </span>
+</div>
+<style>
+.gh-repo-card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  padding: 3px 8px;
+  border-radius: 10px;
+  color: #03045e;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  line-height: 1;
+}
+.gh-repo-card__top {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: inherit;
+  text-decoration: none !important;
+  transition: opacity .15s;
+}
+.gh-repo-card__top:hover { opacity: .65; color: inherit; }
+.gh-repo-card__icon { font-size: 15px; }
+.gh-repo-card__name { opacity: .75; letter-spacing: .01em; }
+.gh-repo-card__divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 180, 216, .25);
+}
+.gh-repo-card__bottom {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.gh-repo-card__stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: inherit;
+  text-decoration: none !important;
+  transition: opacity .15s;
+}
+.gh-repo-card__stat:hover { opacity: .65; color: inherit; }
+.gh-repo-card__stat i { font-size: 12px; opacity: .65; }
+</style>
+<script>
+(function () {
+  if (window.__ghRepoCardLoaded) return;
+  window.__ghRepoCardLoaded = true;
+
+  function fmt(n) { return n >= 1000 ? (n / 1000).toFixed(1) + 'k' : String(n); }
+
+  function applyStats(stars, forks) {
+    document.querySelectorAll('.gh-stars').forEach(function(el) { el.textContent = stars; });
+    document.querySelectorAll('.gh-forks').forEach(function(el) { el.textContent = forks; });
+  }
+
+  fetch('https://api.github.com/repos/fedbiomed/fedbiomed')
+    .then(function(r) { return r.json(); })
+    .then(function(d) {
+      if (typeof d.stargazers_count !== 'number') return;
+      applyStats(fmt(d.stargazers_count), fmt(d.forks_count));
+    })
+    .catch(function(e) { console.warn('[gh-repo-card] fetch failed:', e); });
+}());
+</script>
+
+          </li>
           <li class="nav-item d-none d-md-block">
             <a href="https://docs.fedbiomed.org/"
               class="btn btn-primary btn-gradient bg-gradient-dark-button border-0 rounded-xl"
@@ -1068,16 +1167,16 @@
         <div class="row ">
           <div class="col-lg-4 pb-12 align-self-center">
             <div class="post-category mb-3 text-violet">Research Context</div>
-            <h3 class="h1 post-title mb-3">DTRIP4H</h3>
-            <p>DTRIP4H is a Horizon Europe project that aims to transform healthcare research and innovation in Europe by building a decentralised digital twin ecosystem.</p>
-            <a href="/use_cases/DTRIP4H/" class="more hover link-violet">See Project</a>
+            <h3 class="h1 post-title mb-3">Fed-BioMed at Hospital Centre Henri Becquerel of Rouen</h3>
+            <p>A big thanks to the IT team of the Centre Henri Becquerel (CHB) of Rouen for the successful deployment of Fed-BioMed!</p>
+            <a href="/use_cases/Fed-BioMed%20at%20Hospital-Centre-Henri-Becquerel-of-Rouen/" class="more hover link-violet">See Project</a>
           </div>
           <div class="col-lg-7 offset-lg-1 align-self-end">
             <figure>
               <img class="img-fluid" 
-                   src="/assets/img/projects/DTRIP4H.avif" 
-                   srcset="/assets/img/projects/DTRIP4H.avif 2x" 
-                   alt="DTRIP4H" />
+                   src="/assets/img/projects/CHB_team.jpg" 
+                   srcset="/assets/img/projects/CHB_team.jpg 2x" 
+                   alt="Fed-BioMed at Hospital Centre Henri Becquerel of Rouen" />
             </figure>
           </div>
         </div>
@@ -1090,16 +1189,16 @@
         <div class="row gy-10 align-items-center">
           <div class="col-lg-4 order-lg-2 offset-lg-1">
             <div class="post-category mb-3 text-blue">Research Context</div>
-            <h3 class="h1 post-title mb-3">Fed-BioMed for oncology research</h3>
-            <p>Fed-BioMed contributes to oncology research projects from Centre Antoine Lacassagne.</p>
-            <a href="/use_cases/Fed-BioMed-for-oncology-research/" class="more hover link-blue">See Project</a>
+            <h3 class="h1 post-title mb-3">Real-world Federated Learning for Cardiac CT Imaging</h3>
+            <p>A research study published in npj Digital Medicine demonstrating real-world federated learning using a knowledge-distilled transformer for cardiac CT imaging.</p>
+            <a href="/use_cases/Real-world-Federated-Learning-for-Cardiac-CT-Imaging/" class="more hover link-blue">See Project</a>
           </div>
           <div class="col-lg-7">
             <figure>
               <img class="img-fluid" 
-                   src="/assets/img/projects/antoine_lacassagne.png" 
-                   srcset="/assets/img/projects/antoine_lacassagne.png 2x" 
-                   alt="Fed-BioMed for oncology research" />
+                   src="/assets/img/projects/CTimaging.png" 
+                   srcset="/assets/img/projects/CTimaging.png 2x" 
+                   alt="Real-world Federated Learning for Cardiac CT Imaging" />
             </figure>
           </div>
         </div>
@@ -1115,14 +1214,14 @@
         <div class="card bg-soft-leaf mb-10 mb-lg-0">
           <div class="card-body p-12 pb-0">
             <div class="post-category mb-3 text-leaf">Research Context</div>
-            <h3 class="h1 post-title mb-3">Real-world Federated Learning for Cardiac CT Imaging</h3>
-            <p>A research study published in npj Digital Medicine demonstrating real-world federated learning using a knowledge-distilled transformer for cardiac CT imaging.</p>
-            <a href="/use_cases/Real-world-Federated-Learning-for-Cardiac-CT-Imaging/" class="more hover link-leaf mb-8">See Project</a>
+            <h3 class="h1 post-title mb-3">Fed-BioMed for FEDERATED-LUNG project</h3>
+            <p>FEDERATED-LUNG is a multicentric research project that builds upon the foundations of FEDERATED-PET to further advance the use of artificial intelligence and medical imaging in the management of metastatic lung cancer.</p>
+            <a href="/use_cases/Fed-BioMed%20for%20FEDERATED-LUNG%20project/" class="more hover link-leaf mb-8">See Project</a>
           </div>
           <img class="card-img-bottom" 
-               src="/assets/img/projects/CTimaging.png" 
-               srcset="/assets/img/projects/CTimaging.png 2x" 
-               alt="Real-world Federated Learning for Cardiac CT Imaging" />
+               src="/assets/img/projects/usecase.png" 
+               srcset="/assets/img/projects/usecase.png 2x" 
+               alt="Fed-BioMed for FEDERATED-LUNG project" />
         </div>
       </div>
       
@@ -1131,14 +1230,14 @@
         <div class="card bg-soft-pink ">
           <div class="card-body p-12 pb-0">
             <div class="post-category mb-3 text-pink">Research Context</div>
-            <h3 class="h1 post-title mb-3">DTRIP4H</h3>
-            <p>DTRIP4H is a Horizon Europe project that aims to transform healthcare research and innovation in Europe by building a decentralised digital twin ecosystem.</p>
-            <a href="/use_cases/DTRIP4H/" class="more hover link-pink mb-8">See Project</a>
+            <h3 class="h1 post-title mb-3">Real-world Federated Learning for Cardiac CT Imaging</h3>
+            <p>A research study published in npj Digital Medicine demonstrating real-world federated learning using a knowledge-distilled transformer for cardiac CT imaging.</p>
+            <a href="/use_cases/Real-world-Federated-Learning-for-Cardiac-CT-Imaging/" class="more hover link-pink mb-8">See Project</a>
           </div>
           <img class="card-img-bottom" 
-               src="/assets/img/projects/DTRIP4H.avif" 
-               srcset="/assets/img/projects/DTRIP4H.avif 2x" 
-               alt="DTRIP4H" />
+               src="/assets/img/projects/CTimaging.png" 
+               srcset="/assets/img/projects/CTimaging.png 2x" 
+               alt="Real-world Federated Learning for Cardiac CT Imaging" />
         </div>
       </div>
       
