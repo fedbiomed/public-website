@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
 <!-- Primary Meta Tags -->
-<title> Page Not Found </title>
-<meta name="title" content=" Page Not Found ">
+<title> How it Works - Access Control </title>
+<meta name="title" content=" How it Works - Access Control ">
 <meta name="description" content="
          Healthcare institutions can collaboratively train AI models while keeping sensitive patient data securely on-site using federated learning.">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content=" /404.html ">
-<meta property="og:title" content=" Page Not Found ">
+<meta property="og:url" content=" /access-control/ ">
+<meta property="og:title" content=" How it Works - Access Control ">
 <meta property="og:description" content="
     Healthcare institutions can collaboratively train AI models while keeping sensitive patient data securely on-site using federated learning.">
 
@@ -20,8 +20,8 @@
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="/404.html">
-<meta property="twitter:title" content=" Page Not Found ">
+<meta property="twitter:url" content="/access-control/">
+<meta property="twitter:title" content=" How it Works - Access Control ">
 <meta property="twitter:description" content="
     Healthcare institutions can collaboratively train AI models while keeping sensitive patient data securely on-site using federated learning.">
 
@@ -39,9 +39,14 @@
 
 
 <!-- custom color page wise-->
-<link rel="stylesheet" type="text/css" href="/public-website/assets/css/colors/light.css">
+<link rel="stylesheet" type="text/css" href="/public-website/assets/css/colors/grape.css">
 
 
+
+
+
+<!-- Custom Font Scheme Page Wise-->
+<link rel="preload" type="text/css" href="/public-website/assets/css/fonts/space.css" onload="this.rel='stylesheet'">
 
 
 
@@ -62,6 +67,7 @@
 <body class="">
   <div class="content-wrapper">
 <header class="position-absolute w-100">
+
 
 
 <nav class="navbar navbar-expand-lg center-nav transparent navbar-light">
@@ -293,28 +299,293 @@
 </header>
 <!-- /header -->
 
-<section class="wrapper bg-gradient-fedbiomed" aria-labelledby="hero-title">
-  <div class="container pt-12 pt-md-14 pb-14 pb-md-16">
-    <div class="row">
-      <div class="col-lg-9 col-xl-8 mx-auto">
-        <figure class="mb-10">
-          <img class="img-fluid error-image" src="/public-website/assets/icons/404.svg" alt="404 Illustration" />
-        </figure>
+<section class="wrapper bg-gradient-fedbiomed">
+    <div class="container pt-10 pb-15 pt-md-14 text-center">
+      <div class="row">
+        <div class="mx-auto mb-5 mt-20">
+          <h1 class="display-1 fw-lighter text-fedbiomed-primary">How it Works</h1>
+          <h2 class="display-6 mb-3 fw-lighter text-fedbiomed-primary">Access Control</h2>
+        </div>
       </div>
-      <!-- /column -->
-      <div class="col-lg-8 col-xl-7 col-xxl-6 mx-auto text-center">
-        <h1 class="mb-3">Oops! Page Not Found.</h1>
-        <p class="lead mb-7 px-md-12 px-lg-5 px-xl-7">The page you are looking for is not available or has been moved. Try a different page or go to homepage with the button below.</p>
-        <a href="/public-website/" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl px-5 py-2">Go to Homepage</a>
-      </div>
-      <!-- /column -->
     </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.container -->
-</section>
-<!-- /section -->
+  </section>
+  
+<section id="what-is-access-control" class="wrapper bg-light text-fedbiomed-primary">
+  <div class="container py-10 py-md-12 text-center text-lg-start">
+    <div class="row gy-10 gx-lg-8 gx-xl-12 mb-10 mb-md-14 align-items-center">
 
+      
+      <div class="col-lg-7 position-relative order-2">
+        <video autoplay="" muted="" playsinline="" preload="metadata" loop="" class="section-video" aria-label="Each institution can accept or refuse any request.">
+          <source src="/public-website/assets/video/access-control.mp4" type="video/mp4" />
+        </video>
+      </div>
+      
+
+      <!--/column -->
+      <div class="col-lg-5 order-1">
+
+        <h2 class="display-2 text-fedbiomed-primary">What is <span class="text-fedbiomed-tertiary">Access Control</span>?</h2>
+        <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
+
+        
+        <p class="lead fs-lg fw-lighter">Fed-BioMed ensures <strong>security and governance</strong> by giving each healtchare data provider <strong>full control</strong> over what operations are allowed on its data throughout the federated workflow. This control applies at multiple levels, from which datasets are exposed, to which code is allowed to run, to which cryptographic constraints are enforced. By combining these layers, Fed-BioMed ensures that <strong>each data provider remains the final authority</strong> over its data and the computations performed on it. Additionally, every action is logged in detail, so data provider administrators can always see who ran which operation and when.</p>
+        
+
+        
+        <a href="https://docs.fedbiomed.org/latest/user-guide/secagg/introduction/" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl mt-3">
+          Learn more ➤
+        </a>
+        
+
+      </div>
+      <!--/column -->
+
+    </div>
+  </div>
+</section>
+
+<section id="levels" class="wrapper bg-light text-fedbiomed-primary">
+  <div class="container py-14 pb-md-14">
+
+    <div class="row text-center text-lg-start">
+      <div class="col-12">
+        <h2 class="display-2 text-fedbiomed-primary mt-2">Three Levels of <span class="text-fedbiomed-tertiary">Control</span></h2>
+        <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
+        
+        <p class="lead fs-lg fw-lighter">Fed-BioMed applies access control at three distinct levels, giving each healtcare data provider granular control over its data and computations.</p>
+        
+      </div>
+    </div>
+
+    <div class="level-strips mt-10">
+      
+      <div class="level-strip">
+
+        <div class="level-strip-media">
+          <img src="/public-website/assets/icons/how-it-works/access-control/outline/dataset-level-control.svg" alt="" class="level-strip-icon-img" aria-hidden="true" />
+        </div>
+
+        <div class="level-strip-body">
+          <h3 class="h4 text-fedbiomed-primary mb-3">Dataset Level</h3>
+          <p class="fw-lighter mb-0 display-8 text-fedbiomed-primary">Healtcare data provider administrators choose which datasets to expose to the federation. They can add or remove datasets at any time. All operations are logged.</p>
+        </div>
+
+      </div>
+      
+      <div class="level-strip">
+
+        <div class="level-strip-media">
+          <img src="/public-website/assets/icons/how-it-works/access-control/outline/request-level-control.svg" alt="" class="level-strip-icon-img" aria-hidden="true" />
+        </div>
+
+        <div class="level-strip-body">
+          <h3 class="h4 text-fedbiomed-primary mb-3">Request Level</h3>
+          <p class="fw-lighter mb-0 display-8 text-fedbiomed-primary">Before any code runs, the healtcare data provider reviews and approves or rejects the request. A rejected provider does not participate. Any change to the code triggers a new review.</p>
+        </div>
+
+      </div>
+      
+      <div class="level-strip">
+
+        <div class="level-strip-media">
+          <img src="/public-website/assets/icons/how-it-works/access-control/outline/constraint-level-control.svg" alt="" class="level-strip-icon-img" aria-hidden="true" />
+        </div>
+
+        <div class="level-strip-body">
+          <h3 class="h4 text-fedbiomed-primary mb-3">Constraint Level</h3>
+          <p class="fw-lighter mb-0 display-8 text-fedbiomed-primary">Healtcare data provider define automatic rules that apply to all requests (such as minimum dataset size, disabled operations, or mandatory use of Secure Aggregation).</p>
+        </div>
+
+      </div>
+      
+    </div>
+
+    
+
+  </div>
+</section>
+
+
+<section id="workflow" class="wrapper bg-light text-fedbiomed-primary">
+  <div class="container py-14 pb-md-14">
+
+    <div class="row text-center text-lg-start">
+      <div class="col-12">
+        <h2 class="display-2 text-fedbiomed-primary mt-2">End-to-End <span class="text-fedbiomed-tertiary">Workflow</span></h2>
+        <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
+        <p class="lead fs-lg fw-lighter mb-0">Every federated operation in Fed-BioMed follows a structured access control workflow, from the initial request to execution and audit.</p>
+      </div>
+    </div>
+
+    <div class="fi-workflow-cards-row mt-8">
+      
+      <div class="fi-workflow-card-col pt-4">
+        <div class="fi-workflow-card card border-0 rounded-1 h-100 position-relative">
+          <span class="fi-workflow-card-number" aria-hidden="true">1</span>
+          <div class="card-body fi-workflow-card-body d-flex flex-column align-items-center text-center position-relative z-1 p-4 pb-5">
+            <h3 class="h4 text-fedbiomed-primary mb-3">Request Submission</h3>
+            <p class="text-fedbiomed-primary fw-lighter mb-0 display-8">The researcher sends a request (training, analytics...) including the required code and an optional description of its purpose.</p>
+            
+            <div class="fi-workflow-card-icon mt-auto">
+              <img alt="" src="/public-website/assets/icons/how-it-works/access-control/outline/Request-Submission.svg" />
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="fi-workflow-card-col pt-4">
+        <div class="fi-workflow-card card border-0 rounded-1 h-100 position-relative">
+          <span class="fi-workflow-card-number" aria-hidden="true">2</span>
+          <div class="card-body fi-workflow-card-body d-flex flex-column align-items-center text-center position-relative z-1 p-4 pb-5">
+            <h3 class="h4 text-fedbiomed-primary mb-3">Node-Side Validation</h3>
+            <p class="text-fedbiomed-primary fw-lighter mb-0 display-8">Each node independently checks dataset eligibility, reviews the submitted code, and verifies that all access control rules are satisfied.</p>
+            
+            <div class="fi-workflow-card-icon mt-auto">
+              <img alt="" src="/public-website/assets/icons/how-it-works/access-control/outline/Node-Side-Validation.svg" />
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="fi-workflow-card-col pt-4">
+        <div class="fi-workflow-card card border-0 rounded-1 h-100 position-relative">
+          <span class="fi-workflow-card-number" aria-hidden="true">3</span>
+          <div class="card-body fi-workflow-card-body d-flex flex-column align-items-center text-center position-relative z-1 p-4 pb-5">
+            <h3 class="h4 text-fedbiomed-primary mb-3">Approval or Rejection</h3>
+            <p class="text-fedbiomed-primary fw-lighter mb-0 display-8">The node administrator approves or rejects the request. Approved nodes participate. Rejected nodes do not, and can provide a reason to the researcher.</p>
+            
+            <div class="fi-workflow-card-icon mt-auto">
+              <img alt="" src="/public-website/assets/icons/how-it-works/access-control/outline/Approval-or-Rejection.svg" />
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="fi-workflow-card-col pt-4">
+        <div class="fi-workflow-card card border-0 rounded-1 h-100 position-relative">
+          <span class="fi-workflow-card-number" aria-hidden="true">4</span>
+          <div class="card-body fi-workflow-card-body d-flex flex-column align-items-center text-center position-relative z-1 p-4 pb-5">
+            <h3 class="h4 text-fedbiomed-primary mb-3">Execution</h3>
+            <p class="text-fedbiomed-primary fw-lighter mb-0 display-8">Approved requests are executed locally on the node. No data leaves the institution.</p>
+            
+            <div class="fi-workflow-card-icon mt-auto">
+              <img alt="" src="/public-website/assets/icons/how-it-works/access-control/outline/Execution.svg" />
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="fi-workflow-card-col pt-4">
+        <div class="fi-workflow-card card border-0 rounded-1 h-100 position-relative">
+          <span class="fi-workflow-card-number" aria-hidden="true">5</span>
+          <div class="card-body fi-workflow-card-body d-flex flex-column align-items-center text-center position-relative z-1 p-4 pb-5">
+            <h3 class="h4 text-fedbiomed-primary mb-3">Audit Logging</h3>
+            <p class="text-fedbiomed-primary fw-lighter mb-0 display-8">Every action (submission, approval, rejection, execution) is logged for full traceability.</p>
+            
+            <div class="fi-workflow-card-icon mt-auto">
+              <img alt="" src="/public-website/assets/icons/how-it-works/access-control/outline/Audit-Logging.svg" />
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    
+
+  </div>
+</section>
+
+
+<section id="gui-tabs-review" class="wrapper bg-light text-fedbiomed-primary">
+  <div class="container py-14 pb-md-14">
+
+    <div class="row text-center text-lg-start">
+      <div class="col-12">
+        <h2 class="display-2 text-fedbiomed-primary mt-2">Managing Access Control from the <span class="text-fedbiomed-tertiary">GUI</span></h2>
+        <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
+        
+        <p class="lead fs-lg fw-lighter mb-8">Healcare data provider administrators can manage access control from the Command Line Interface (CLI) or directly from the <strong>Fed-BioMed Graphical User Interface (GUI)</strong>, without any technical configuration. The example below shows a complete approval workflow in action.</p>
+        
+      </div>
+    </div>
+
+    <ul class="nav justify-content-center border-0 mb-6 gap-2 gap-md-3 flex-wrap text-center" role="tablist">
+      
+      <li class="nav-item" role="presentation">
+        <a id="gui-tab-training-plans-list" class="nav-link rounded-pill px-4 py-2 gui-tab active" data-bs-toggle="tab" href="#gui-panel-training-plans-list" role="tab" aria-controls="gui-panel-training-plans-list" aria-selected="true">
+          Training Plans List
+        </a>
+      </li>
+      
+      <li class="nav-item" role="presentation">
+        <a id="gui-tab-code-review" class="nav-link rounded-pill px-4 py-2 gui-tab " data-bs-toggle="tab" href="#gui-panel-code-review" role="tab" aria-controls="gui-panel-code-review" aria-selected="false">
+          Code Review
+        </a>
+      </li>
+      
+      <li class="nav-item" role="presentation">
+        <a id="gui-tab-rejection" class="nav-link rounded-pill px-4 py-2 gui-tab " data-bs-toggle="tab" href="#gui-panel-rejection" role="tab" aria-controls="gui-panel-rejection" aria-selected="false">
+          Rejection
+        </a>
+      </li>
+      
+      <li class="nav-item" role="presentation">
+        <a id="gui-tab-updated-status" class="nav-link rounded-pill px-4 py-2 gui-tab " data-bs-toggle="tab" href="#gui-panel-updated-status" role="tab" aria-controls="gui-panel-updated-status" aria-selected="false">
+          Updated Status
+        </a>
+      </li>
+      
+    </ul>
+
+    <div class="tab-content">
+      
+      <div class="tab-pane fade show active text-center" id="gui-panel-training-plans-list" role="tabpanel" aria-labelledby="gui-tab-training-plans-list">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <img src="/public-website/assets/img/access-control/training-plans-list.png" alt="The list of submitted training plans with their current approval status." class="gui-tab-screenshot" />
+            <p class="gui-tab-caption mt-3">The list of submitted training plans with their current approval status.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="tab-pane fade  text-center" id="gui-panel-code-review" role="tabpanel" aria-labelledby="gui-tab-code-review">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <img src="/public-website/assets/img/access-control/code-review.png" alt="Full code of the training plan submitted by the researcher, ready for review." class="gui-tab-screenshot" />
+            <p class="gui-tab-caption mt-3">Full code of the training plan submitted by the researcher, ready for review.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="tab-pane fade  text-center" id="gui-panel-rejection" role="tabpanel" aria-labelledby="gui-tab-rejection">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <img src="/public-website/assets/img/access-control/rejection.png" alt="The rejection dialog lets the administrator attach an explanatory note for the researcher." class="gui-tab-screenshot" />
+            <p class="gui-tab-caption mt-3">The rejection dialog lets the administrator attach an explanatory note for the researcher.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="tab-pane fade  text-center" id="gui-panel-updated-status" role="tabpanel" aria-labelledby="gui-tab-updated-status">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <img src="/public-website/assets/img/access-control/updated-status.png" alt="Updated list after review." class="gui-tab-screenshot" />
+            <p class="gui-tab-caption mt-3">Updated list after review.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+</section>
 
 
 

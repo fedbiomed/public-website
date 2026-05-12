@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
 <!-- Primary Meta Tags -->
-<title> Page Not Found </title>
-<meta name="title" content=" Page Not Found ">
+<title> How it Works - Federated Learning </title>
+<meta name="title" content=" How it Works - Federated Learning ">
 <meta name="description" content="
          Healthcare institutions can collaboratively train AI models while keeping sensitive patient data securely on-site using federated learning.">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content=" /404.html ">
-<meta property="og:title" content=" Page Not Found ">
+<meta property="og:url" content=" /federated-learning/ ">
+<meta property="og:title" content=" How it Works - Federated Learning ">
 <meta property="og:description" content="
     Healthcare institutions can collaboratively train AI models while keeping sensitive patient data securely on-site using federated learning.">
 
@@ -20,8 +20,8 @@
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="/404.html">
-<meta property="twitter:title" content=" Page Not Found ">
+<meta property="twitter:url" content="/federated-learning/">
+<meta property="twitter:title" content=" How it Works - Federated Learning ">
 <meta property="twitter:description" content="
     Healthcare institutions can collaboratively train AI models while keeping sensitive patient data securely on-site using federated learning.">
 
@@ -39,9 +39,14 @@
 
 
 <!-- custom color page wise-->
-<link rel="stylesheet" type="text/css" href="/public-website/assets/css/colors/light.css">
+<link rel="stylesheet" type="text/css" href="/public-website/assets/css/colors/grape.css">
 
 
+
+
+
+<!-- Custom Font Scheme Page Wise-->
+<link rel="preload" type="text/css" href="/public-website/assets/css/fonts/space.css" onload="this.rel='stylesheet'">
 
 
 
@@ -62,6 +67,7 @@
 <body class="">
   <div class="content-wrapper">
 <header class="position-absolute w-100">
+
 
 
 <nav class="navbar navbar-expand-lg center-nav transparent navbar-light">
@@ -293,29 +299,232 @@
 </header>
 <!-- /header -->
 
-<section class="wrapper bg-gradient-fedbiomed" aria-labelledby="hero-title">
-  <div class="container pt-12 pt-md-14 pb-14 pb-md-16">
-    <div class="row">
-      <div class="col-lg-9 col-xl-8 mx-auto">
-        <figure class="mb-10">
-          <img class="img-fluid error-image" src="/public-website/assets/icons/404.svg" alt="404 Illustration" />
-        </figure>
+<section class="wrapper bg-gradient-fedbiomed">
+    <div class="container pt-10 pb-15 pt-md-14 text-center">
+      <div class="row">
+        <div class="mx-auto mb-5 mt-20">
+          <h1 class="display-1 fw-lighter text-fedbiomed-primary">How it Works</h1>
+          <h2 class="display-6 mb-3 fw-lighter text-fedbiomed-primary">Federated Learning</h2>
+        </div>
       </div>
-      <!-- /column -->
-      <div class="col-lg-8 col-xl-7 col-xxl-6 mx-auto text-center">
-        <h1 class="mb-3">Oops! Page Not Found.</h1>
-        <p class="lead mb-7 px-md-12 px-lg-5 px-xl-7">The page you are looking for is not available or has been moved. Try a different page or go to homepage with the button below.</p>
-        <a href="/public-website/" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl px-5 py-2">Go to Homepage</a>
-      </div>
-      <!-- /column -->
     </div>
-    <!-- /.row -->
+  </section>
+  
+<section id="what-is-federated-learning" class="wrapper bg-light text-fedbiomed-primary">
+  <div class="container py-10 py-md-12 text-center text-lg-start">
+    <div class="row gy-10 gx-lg-8 gx-xl-12 mb-10 mb-md-14 align-items-center">
+
+      
+      <div class="col-lg-7 position-relative order-2">
+        <video autoplay="" muted="" playsinline="" preload="metadata" loop="" class="section-video" aria-label="An animation showing models exchange between an aggregator and general nodes">
+          <source src="/public-website/assets/video/federated-learning.mp4" type="video/mp4" />
+        </video>
+      </div>
+      
+
+      <!--/column -->
+      <div class="col-lg-5 order-1">
+
+        <h2 class="display-2 text-fedbiomed-primary">What is <span class="text-fedbiomed-tertiary">Federated Learning</span>?</h2>
+        <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
+
+        
+        <p class="lead fs-lg fw-lighter">Federated learning is a <strong>collaborative</strong> approach to training machine learning models across <strong>multiple institutions</strong>. Instead of transferring data to a central location, each institution trains the model <strong>locally</strong>. Only <strong>model updates</strong> (not patient data) are <strong>shared and combined</strong>. This approach allows collaboration while maintaining institutional responsibility over data.</p>
+        
+
+        
+        <a href="https://docs.fedbiomed.org/latest/getting-started/what-is-fedbiomed/#federated-learning" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl mt-3">
+          Learn more ➤
+        </a>
+        
+
+      </div>
+      <!--/column -->
+
+    </div>
   </div>
-  <!-- /.container -->
 </section>
-<!-- /section -->
+<section id="workflow" class="wrapper bg-light text-fedbiomed-primary">
+  <div class="container py-14 pb-md-14">
 
+    <!-- Header -->
+    <div class="row text-center text-lg-start">
+      <div class="col-12">
+        <h2 class="display-2 text-fedbiomed-primary mt-2">Workflow</h2>
+        <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
+        <p class="lead fs-lg fw-lighter mb-0">A typical collaborative experiment follows these steps and each step is structured and traceable</p>
+      </div>
+    </div>
 
+    <!-- Cards -->
+    <div class="workflow-cards-row mt-8">
+      
+      <div class="workflow-card-col pt-4">
+        <div class="workflow-card card border-0 rounded-1 h-100 position-relative">
+          <span class="workflow-card-number" aria-hidden="true">1</span>
+          <div class="card-body workflow-card-body d-flex flex-column align-items-center text-center position-relative z-1 p-4 pb-5">
+            <p class="text-fedbiomed-primary fw-lighter mb-4 display-8">A research team defines a training plan.</p>
+            <div class="workflow-card-icon mt-auto">
+              <img alt="A research team defines a training plan." src="/public-website/assets/icons/how-it-works/federated-learning/outline/Researchers.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="workflow-card-col pt-4">
+        <div class="workflow-card card border-0 rounded-1 h-100 position-relative">
+          <span class="workflow-card-number" aria-hidden="true">2</span>
+          <div class="card-body workflow-card-body d-flex flex-column align-items-center text-center position-relative z-1 p-4 pb-5">
+            <p class="text-fedbiomed-primary fw-lighter mb-4 display-8">Institutions review and approve participation.</p>
+            <div class="workflow-card-icon mt-auto">
+              <img alt="Institutions review and approve participation." src="/public-website/assets/icons/how-it-works/federated-learning/outline/Approval-or-Rejection.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="workflow-card-col pt-4">
+        <div class="workflow-card card border-0 rounded-1 h-100 position-relative">
+          <span class="workflow-card-number" aria-hidden="true">3</span>
+          <div class="card-body workflow-card-body d-flex flex-column align-items-center text-center position-relative z-1 p-4 pb-5">
+            <p class="text-fedbiomed-primary fw-lighter mb-4 display-8">Local training is performed within each participating institution.</p>
+            <div class="workflow-card-icon mt-auto">
+              <img alt="Local training is performed within each participating institution." src="/public-website/assets/icons/how-it-works/federated-learning/outline/local-training.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="workflow-card-col pt-4">
+        <div class="workflow-card card border-0 rounded-1 h-100 position-relative">
+          <span class="workflow-card-number" aria-hidden="true">4</span>
+          <div class="card-body workflow-card-body d-flex flex-column align-items-center text-center position-relative z-1 p-4 pb-5">
+            <p class="text-fedbiomed-primary fw-lighter mb-4 display-8">Model updates are securely aggregated.</p>
+            <div class="workflow-card-icon mt-auto">
+              <img alt="Model updates are securely aggregated." src="/public-website/assets/icons/how-it-works/federated-learning/outline/aggregated-weights.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="workflow-card-col pt-4">
+        <div class="workflow-card card border-0 rounded-1 h-100 position-relative">
+          <span class="workflow-card-number" aria-hidden="true">5</span>
+          <div class="card-body workflow-card-body d-flex flex-column align-items-center text-center position-relative z-1 p-4 pb-5">
+            <p class="text-fedbiomed-primary fw-lighter mb-4 display-8">The improved model is redistributed.</p>
+            <div class="workflow-card-icon mt-auto">
+              <img alt="The improved model is redistributed." src="/public-website/assets/icons/how-it-works/federated-learning/outline/redistribution-model.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Button -->
+    <div class="text-center mt-8">
+      <a href="https://docs.fedbiomed.org/latest/getting-started/fedbiomed-workflow/" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl px-6 py-2">
+        Learn more ➤
+      </a>
+    </div>
+
+  </div>
+</section>
+<section id="security-in-practice" class="wrapper bg-light text-fedbiomed-primary">
+  <div class="container py-14 pb-md-14 ">
+    <!-- Header -->
+    <div class="row text-center text-lg-start">
+      <div class="col-12 col-lg-5">
+        <h2 class="display-2 text-fedbiomed-primary mt-2 ">Security in <span class="text-fedbiomed-tertiary">Practice</span></h2>
+        <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
+        
+        <p class="lead fs-lg">When a model is trained:</p>
+        
+
+        
+        <ul class="lead fs-lg fw-lighter text-start">
+          
+          <li>The training happens <strong>locally inside the data provider</strong>’s secure environment.</li>
+          
+          <li>Only mathematical <strong>model updates are sent outside</strong> — never raw images or patient records.</li>
+          
+          <li>These updates are <strong>encrypted during transmission</strong>.</li>
+          
+        </ul>
+        
+
+        
+        <p class="lead fs-lg">This means that even if someone intercepted the communication, they could not read or reconstruct patient data.</p>
+        
+
+        <!-- Button -->
+        <div class="text-center text-lg-start mt-8">
+          <a href="https://docs.fedbiomed.org/latest/user-guide/secagg/introduction/" class="btn btn-primary bg-gradient-light-button border-0 rounded-xl px-6 py-2">
+            Learn more ➤
+          </a>
+        </div>
+      </div>
+
+      <!-- Diagram -->
+      
+      <div class="col-12 col-lg-7 mt-8 mt-lg-0">
+        <div class="d-flex align-items-center justify-content-center">
+          <!-- Card 1 -->
+          
+          <div style="box-shadow:0 4px 20px rgba(0,0,0,0.10); padding:20px; width:210px; text-align:center;">
+            <p class="fw-bold text-fedbiomed-primary mb-2">Original local data</p>
+            <img src="/public-website/assets/img/federated-learning/local_data.png" alt="Original local data" style="width:130px; height:130px; object-fit:cover; border-radius:2px;" />
+            <p class="text-fedbiomed-primary mt-2 mb-0" style="font-size:0.78rem; font-style:italic;">never leaves the institution</p>
+          </div>
+
+          <!-- Fork arrows SVG -->
+          <svg width="80" height="220" viewBox="0 0 80 220" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;">
+            <defs>
+              <linearGradient id="fg1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#90e0ef;" />
+                <stop offset="100%" style="stop-color:#29b4e8;" />
+              </linearGradient>
+            </defs>
+            <!-- Vertical stem -->
+            <line x1="0" y1="110" x2="40" y2="110" stroke="#90e0ef" stroke-width="5" stroke-linecap="round" />
+            <!-- Branch up -->
+            <line x1="40" y1="110" x2="40" y2="55" stroke="#90e0ef" stroke-width="5" stroke-linecap="round" />
+            <line x1="40" y1="55" x2="72" y2="55" stroke="#90e0ef" stroke-width="5" stroke-linecap="round" />
+            <polygon points="68,48 80,55 68,62" fill="#90e0ef" />
+            <!-- Branch down -->
+            <line x1="40" y1="110" x2="40" y2="165" stroke="#90e0ef" stroke-width="5" stroke-linecap="round" />
+            <line x1="40" y1="165" x2="72" y2="165" stroke="#90e0ef" stroke-width="5" stroke-linecap="round" />
+            <polygon points="68,158 80,165 68,172" fill="#90e0ef" />
+          </svg>
+
+          <!-- Cards 2 & 3 stacked -->
+          <div class="d-flex flex-column gap-3">
+            
+            <div style="box-shadow:0 4px 20px rgba(0,0,0,0.10); padding:20px; width:280px;">
+              <p class="fw-bold text-fedbiomed-primary mb-2 text-center">Reconstruction attempt</p>
+              <div class="d-flex align-items-center gap-3">
+                <img src="/public-website/assets/img/federated-learning/reconstructed_bad.png" alt="Reconstruction attempt" style="width:110px; height:110px; object-fit:cover; border-radius:2px; flex-shrink:0;" />
+                <p class="text-fedbiomed-primary mb-0 fw-lighter">Individual updates can reveal sensitive information.</p>
+              </div>
+              <p class="text-fedbiomed-primary mt-2 mb-0 text-center" style="font-size:0.78rem; font-style:italic;">without secure aggregation</p>
+            </div>
+
+            
+            <div style="box-shadow:0 4px 20px rgba(0,0,0,0.10); padding:20px; width:280px;">
+              <p class="fw-bold text-fedbiomed-primary mb-2 text-center">Reconstruction attempt</p>
+              <div class="d-flex align-items-center gap-3">
+                <img src="/public-website/assets/img/federated-learning/reconstructed_good.png" alt="Reconstruction attempt" style="width:110px; height:110px; object-fit:cover; border-radius:2px; flex-shrink:0;" />
+                <p class="text-fedbiomed-primary mb-0 fw-lighter">Individual model updates are cryptographically protected before aggregation.</p>
+              </div>
+              <p class="text-fedbiomed-primary mt-2 mb-0 text-center" style="font-size:0.78rem; font-style:italic;">with secure aggregation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
 
 
 
