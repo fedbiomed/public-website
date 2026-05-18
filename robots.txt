@@ -1,1 +1,1 @@
-Sitemap: https://fedbiomed.org/public-website/sitemap.xml
+Sitemap: https://fedbiomed.org/sitemap.xml
