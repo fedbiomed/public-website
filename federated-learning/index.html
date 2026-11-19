@@ -530,6 +530,46 @@
     </div>
   </div>
 </section>
+<section id="security-audit" class="wrapper bg-light text-fedbiomed-primary">
+  <div class="container pb-14">
+    <div class="row gy-8 align-items-center text-center text-lg-start">
+      <!-- Text -->
+      <div class="col-12 col-lg-7">
+        <h3 class="display-4 text-fedbiomed-primary fw-bold">Cybersecurity <span class="text-fedbiomed-tertiary">audit</span></h3>
+        <div class="roadmap-title-accent mx-auto mx-lg-0 mb-5"></div>
+        
+        <p class="lead fs-lg fw-lighter text-start">In August 2026, cybersecurity firm <strong>S2GRUPO</strong> carried out a security assessment of Fed-BioMed, in the context of the EUCAIM project. Their specialists deployed the platform locally, tested the running application from an attacker’s perspective (black-box and grey-box testing), and reviewed the source code of the web component (white-box analysis). <strong>Their detailed report contained 53 findings</strong> of low, medium and high severity, some of them extending to Fed-BioMed’s core library.</p>
+        
+        <p class="lead fs-lg fw-lighter text-start mb-0">Our team assessed every finding against Fed-BioMed’s architecture and threat model. We then fixed issues including debug mode being enabled by default, an incorrect admin authorization check, non-cryptographic randomness in the secret shares used for secure aggregation, and a default node-to-node key stored in the repository. We also removed legacy UI code and added a cooldown after failed login attempts. <strong>These fixes are available from Fed-BioMed v6.5.</strong> We assessed the remaining findings as lower risk in the current deployment model, but continue tracking them, and further hardening is under way.</p>
+        
+      </div>
+
+      <!-- Auditor logos (shown on the left on large screens, below the text on mobile) -->
+      <div class="col-12 col-lg-5 order-lg-first">
+        <div class="d-flex flex-column align-items-center gap-4">
+          
+          <div class="audit-logo-card">
+            <p class="fw-bold text-fedbiomed-primary mb-3">Security assessment by</p>
+            
+            <a href="https://s2grupo.es/" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/icons/homepage/logos/s2grupo.webp" alt="S2GRUPO logo" />
+            </a>
+            
+          </div>
+          
+          <div class="audit-logo-card">
+            <p class="fw-bold text-fedbiomed-primary mb-3">S2GRUPO’s Red Team</p>
+            
+            <img src="/assets/img/testimonials/Root52.webp" alt="Root52 logo" />
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
 
